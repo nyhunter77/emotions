@@ -1,0 +1,11 @@
+<!-- form for emotion and submit -->
+
+<% @feelings.each do |feeling| %>
+
+<%= form_for feeling do |f| %>
+	<%= f.label :feeling %>
+	<%= f.text_field :feeling, :autocomplete => :off %>
+	<%= f.submit 'Submit' %>
+<% end %>
+	
+<% end %>

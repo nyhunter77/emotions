@@ -1,0 +1,12 @@
+<!-- form for emotion and submit -->
+
+
+	<%= form_for @feeling, url: home_show_path do |f| %>
+		<%= f.label :feeling %>
+		<%= f.text_field :feeling, :autocomplete => :off %>
+		<%= f.submit 'Submit' %>
+	<% end %>
+	
+
+
+

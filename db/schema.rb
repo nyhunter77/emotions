@@ -11,25 +11,78 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141102164518) do
+ActiveRecord::Schema.define(version: 20141103163155) do
 
-  create_table "colors", force: true do |t|
+  create_table "color_emotions", force: true do |t|
     t.integer  "color_id"
-    t.string   "hue"
+    t.integer  "emotion_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "emotion_colors", force: true do |t|
-    t.integer  "emotion_id"
-    t.integer  "color_id"
+  add_index "color_emotions", ["color_id"], name: "index_color_emotions_on_color_id"
+  add_index "color_emotions", ["emotion_id"], name: "index_color_emotions_on_emotion_id"
+
+  create_table "colors", force: true do |t|
+    t.string   "name"
+    t.string   "hexcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "emotions", force: true do |t|
-    t.string   "feeling"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "image_emotions", force: true do |t|
+    t.integer  "image_id"
     t.integer  "emotion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "image_emotions", ["emotion_id"], name: "index_image_emotions_on_emotion_id"
+  add_index "image_emotions", ["image_id"], name: "index_image_emotions_on_image_id"
+
+  create_table "images", force: true do |t|
+    t.string   "name"
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "music_emotions", force: true do |t|
+    t.integer  "music_id"
+    t.integer  "emotion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "music_emotions", ["emotion_id"], name: "index_music_emotions_on_emotion_id"
+  add_index "music_emotions", ["music_id"], name: "index_music_emotions_on_music_id"
+
+  create_table "musics", force: true do |t|
+    t.string   "name"
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "video_emotions", force: true do |t|
+    t.integer  "video_id"
+    t.integer  "emotion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "video_emotions", ["emotion_id"], name: "index_video_emotions_on_emotion_id"
+  add_index "video_emotions", ["video_id"], name: "index_video_emotions_on_video_id"
+
+  create_table "videos", force: true do |t|
+    t.string   "name"
+    t.string   "file"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

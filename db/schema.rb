@@ -11,11 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20141103170547) do
-=======
+
 ActiveRecord::Schema.define(version: 20141103163155) do
->>>>>>> FETCH_HEAD
 
   create_table "color_emotions", force: true do |t|
     t.integer  "color_id"
@@ -47,7 +44,6 @@ ActiveRecord::Schema.define(version: 20141103163155) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -68,7 +64,7 @@ ActiveRecord::Schema.define(version: 20141103163155) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-=======
+
   add_index "image_emotions", ["emotion_id"], name: "index_image_emotions_on_emotion_id"
   add_index "image_emotions", ["image_id"], name: "index_image_emotions_on_image_id"
 
@@ -112,6 +108,5 @@ ActiveRecord::Schema.define(version: 20141103163155) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
->>>>>>> FETCH_HEAD
 
 end

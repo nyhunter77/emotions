@@ -1,11 +1,7 @@
 <!-- form for emotion and submit -->
 
 
-	<%= form_for @emotion, url: emotions_any_emotion_path do |f| %>
-		<%= f.label :emotion %>
-		<%= f.select(:emotion, options_for_select(['Choose One', 0],['happy', 1],['sad', 2])) %>
-		<%= f.submit 'Submit' %>
-	<% end %>
+	
 	
 
 

@@ -1,10 +1,15 @@
 @media all and (min-width: 320px){
-	body { 
-		background-color: gold;
+	body {  
 	} 
-	h1 {
-		font-family: 'Euphoria Script', cursive;
+	a{
+		text-decoration: none;
+		color: #333;
 	}
+	a:hover{
+		text-decoration: none;
+		color: orange;
+	}
+	
 	.happyface {
 	height: 400px;
 	width: 400px;
@@ -20,12 +25,111 @@
 		/*background-attachment: fixed;*/
 		background-image: url("/assets/sad.jpg");
 	}
+
+	#wrapper{
+		width: 95%;
+		height: 480px;  
+		margin: 0 auto;
+	}
+
+	nav{
+		width: 100%; 
+		height: 30px; 
+		float: left; 
+		font-size: 1em;
+		.logo{
+			width: 20%;  
+			display: inline-block;
+			padding: 5px;
+		} 
+		.buttons{
+			widows: 30%;
+			padding: 5px; 
+			float: right;
+			display: inline-block;
+		}
+	} 
+  
+  .home_index{  
+  	width: 100%;
+  	position: relative;
+  	top: 100px; 
+  	h1 { 
+			font-size: 3em;
+			font-family: 'Euphoria Script', cursive;
+			text-align: center;  
+		}
+  	.form{
+			text-align: center;
+		}
+  }
+	
+
+
 }
   
 @media all and (min-width: 480px){} 
 @media all and (min-width: 768px){}
 @media all and (min-width: 992px){}
-@media all and (min-width: 1200px){}
+@media all and (min-width: 1200px){
+	#wrapper{
+		width: 90%;
+		height: 600px;
+		// background-color: pink;
+		margin: 0 auto;
+	}
+
+	nav{
+		width: 100%; 
+		height: 50px;
+		// background-color: gold;
+		float: left; 
+		font-size: 2em;
+		.logo{
+			width: 20%; 
+			// background-color:orange;
+			display: inline-block;
+			padding: 5px;
+		} 
+		.buttons{
+			widows: 30%;
+			padding: 5px;
+			// background-color:lightgreen;
+			float: right;
+			display: inline-block;
+		}
+	} 
+  
+  .home_index{  
+  	width: 100%;
+  	position: relative;
+  	top: 100px;
+
+  	// background-color: lightblue;
+  	h1 { 
+			font-size: 5em;
+			font-family: impact;
+			text-align: center;  
+		}
+  	.form{
+			text-align: center;
+			font-size: 3em;
+			button{
+				margin: 10px;
+				font-size: 0.75em;
+			}
+			.button{ 
+				margin: 10px;
+				width: 20%;
+			}
+		}
+  }
+
+  .select{ 
+  	width: 30%; 
+  	padding: 10px;  
+  }
+}
  
 
 

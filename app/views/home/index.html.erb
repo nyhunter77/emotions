@@ -1,21 +1,18 @@
-<h1>I want to feel... </h1>
+<div class="home_index">
+	<h1>I want to feel... </h1>
+	 
+	<div class="form">
+		<%= form_tag(home_show_path, method: :post) do %> 
+		<%= select_tag(:name, options_for_select([['happy', emotion_id("happy")],
+												                      ['sad',   emotion_id("sad")]]),{class: :select}) %> 
+    <br>
+    <button>video</button> | <button>music</button>
+    <br>
+		<%= submit_tag 'Hit It!', class: :button %>
+		<% end %>
+	</div> 
+</div>
+
+
  
-<%= form_tag(home_show_path, method: :post) do %> 
-	<%= select_tag(:name, options_for_select([['happy', emotion_id("happy")],
-											                      ['sad',   emotion_id("sad")]])) %>
-	<%= submit_tag 'Submit' %>
-<<<<<<< HEAD
-  
-<% end %>
-=======
-
-<% end %>
-
-
-
-<%= link_to 'Login', new_user_session_path %>
-<%= link_to 'Sign Up', new_user_registration_path %> 
-<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-
->>>>>>> 7433d73ccb6d49a230f7f1a8dcbac4868bb491d4
 

@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'home/index'
   get 'home/show'
   post 'home/show'
 
   get 'emotions/happy'
-  get 'emotions/sad'
-  get 'emotions/any_emotion'
-  post 'emotions/any_emotion'
+  get 'emotions/sad' 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

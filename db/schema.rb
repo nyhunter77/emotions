@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20141103170547) do
   end
 
   create_table "emotions", force: true do |t|
-    t.string   "type"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

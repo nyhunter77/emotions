@@ -1,17 +1,12 @@
-<p>Landing page ... let's choose how'd you like to feel. </p>
+<h1>I want to feel... </h1>
+  
+<div>
+	<%= select_tag(:name, options_for_select([['happy', 1], ['sad', 2]])) %>
+</div>
+
 
 <%= link_to 'Login', new_user_session_path %>
 <%= link_to 'Sign Up', new_user_registration_path %> 
 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
- <!-- render 'form'  -->
 
-<!-- <div id='choose'>
-	<select name='Feelings'>
-		<option value="Happy"> Happy </option>
-		<option value="Sad"> Sad </option>
-	</select>
-
-	<input type="submit" name="submit" value="Submit"
-
-</div> -->

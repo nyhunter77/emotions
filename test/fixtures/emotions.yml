@@ -1,15 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  emotion_type: MyString
-  reference: 
-  reference: 
-  reference: 
-  reference: 
+  type: MyString
 
 two:
-  emotion_type: MyString
-  reference: 
-  reference: 
-  reference: 
-  reference: 
+  type: MyString
+

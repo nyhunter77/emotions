@@ -1,24 +1,24 @@
 class HomeController < ApplicationController
 
   def index
-  	@feelings = Emotion.all
-  	@feeling = ""
+  	@emotions = Emotion.all
+  	# @emotion = ""
   end
 
   def show 
-  	@feeling = params[:feeling].downcase
-  	if @feeling == "happy" #Emotion.find(params[:feeling])
+  	@emotion = params[:emotion]
+  	if @emotion == "happy" #Emotion.find(params[:emotion])
   		# puts "*"*50
   		# puts "happy"
   		# puts "*"*50
-  		@feeling = Emotion.find(1).feeling
+  		@emotion = Emotion.find(1).type
   		flash[:notice] = "the emotion is happy"
   		redirect_to emotions_happy_path
   	else 
   		# puts "*"*50
-  		# puts @feeling
+  		# puts @emotion
   		# puts "*"*50
-  		@feeling = Emotion.find(2).feeling
+  		@emotion = Emotion.find(2).type
   		flash[:alert] = "the emotion is sad"
   		redirect_to emotions_sad_path
   	end
@@ -27,11 +27,11 @@ class HomeController < ApplicationController
   private
 
   def feeling_params
-  	params.require(:emotion).permit(:feeling)
+  	params.require(:emotion).permit(:emotion)
   end
 
   def set_feeling
-  	@feeling = Emotion.find(params[:id])
+  	@emotion = Emotion.find(params[:id])
   end
 
 

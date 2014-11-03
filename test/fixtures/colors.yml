@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  emotion_type: 
+  hexcode: MyString
 
 two:
   name: MyString
-  emotion_type: 
+  hexcode: MyString

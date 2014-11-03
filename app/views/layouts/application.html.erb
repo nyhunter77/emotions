@@ -4,8 +4,28 @@
   <title>Emotions</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <style><%= yield :stylesheets %></style>
+  <link type="text/css" href="/assets/jplayer.blue.monday.css" rel="stylesheet" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/assets/jquery.jplayer.min.js"></script>
   <%= csrf_meta_tags %>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            title: "Bubble",
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
+    });
+  </script>
+
 </head>
 <body>
 

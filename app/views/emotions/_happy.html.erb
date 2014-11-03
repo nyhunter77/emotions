@@ -1,0 +1,11 @@
+<h1> The feeling is <%= @feeling %>. </h1>
+		<img src="/assets/happy.gif" alt="happy face"> <br/>
+
+		<iframe width="420" height="315" src="//www.youtube.com/embed/KLMJPKylg2Y" frameborder="0" allowfullscreen></iframe> <br/>
+
+		<% content_for :stylesheets do %>
+  			body {background-color: pink;}
+		<% end %>
+
+		<%= render 'jplayer' %>   
+		<%= link_to 'home', home_index_path %>

@@ -1,2 +1,21 @@
 body {
-  background-color: gold; }
+  width: 950px;
+  margin: 0 auto; }
+
+.happyface {
+  height: 400px;
+  width: 400px;
+  background-image: url("/assets/happy.gif"); }
+
+.sadface {
+  height: 400px;
+  width: 400px;
+  background-repeat: none;
+  background-size: 100%;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  background-image: url("/assets/sad.jpg"); }
+
+#videoBox {
+  text-align: center;
+  vertical-align: middle; }

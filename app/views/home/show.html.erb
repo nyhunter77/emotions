@@ -1,7 +1,11 @@
+<!-- <div> -->
+	<%# if @emotion.name == "happy" %>
+		<%#= render '/emotions/happy' %>
+	<%# else %>
+		<%#= render '/emotions/sad' %>
+	<%# end %>
+<!-- </div>  -->
+
 <div>
-	<% if @emotion.name == "happy" %>
-		<%= render '/emotions/happy' %>
-	<% else %>
-		<%= render '/emotions/sad' %>
-	<% end %>
-</div> 
+	<%= render '/emotions/images' %>
+</div>

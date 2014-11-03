@@ -2,11 +2,14 @@ class HomeController < ApplicationController
 
   def index
   	@emotions = Emotion.all
-    @emotions = @emotions.each
   end
 
   def show 
   	@emotion = Emotion.find(params[:name])
+  end
+
+  def show 
+  	@emotion = Emotion.find(feeling_params)
   end
 
 
@@ -19,6 +22,5 @@ class HomeController < ApplicationController
   def set_feeling
   	@emotion = Emotion.find(params[:id])
   end
-
 
 end

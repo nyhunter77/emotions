@@ -1,0 +1,12 @@
+<nav>
+	<% if current_user %>
+		<!-- logo, signout -->
+		<%= link_to "logo", root_path %>
+		<%= link_to "sign out", destroy_user_session_path, method: :delete, class: :button %>
+	<% else %>
+		<!-- logo, sign in, sign up -->
+		<%= link_to "logo", root_path %>
+		<%= link_to "sign in", new_user_session_path, class: :button %> | 
+		<%= link_to "sign up", new_user_registration_path, class: :button %>
+	<% end %>
+</nav>

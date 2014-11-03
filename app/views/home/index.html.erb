@@ -1,6 +1,10 @@
 <p>Landing page ... let's choose how'd you like to feel. </p>
 
-<%= render 'form' %>
+<%= link_to 'Login', new_user_session_path %>
+<%= link_to 'Sign Up', new_user_registration_path %> 
+<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+
+ <!-- render 'form'  -->
 
 <!-- <div id='choose'>
 	<select name='Feelings'>

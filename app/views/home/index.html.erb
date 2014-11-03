@@ -1,16 +1,13 @@
 <h1>I want to feel... </h1>
-  
-
-<div>
-	<%= select_tag(:name, options_for_select([['happy', 1], ['sad', 2]])) %>
-</div>
 
 
 <%= form_tag(home_show_path, method: :post) do %>
 	<%= label_tag :name %>
 	<%= select_tag(:name, options_for_select([['happy', emotion_id("happy")],
-											['sad',   emotion_id("sad")]])) %>
+											                      ['sad',   emotion_id("sad")]])) %>
 	<%= submit_tag 'Submit' %>
+
+<% end %>
 
 
 
@@ -18,5 +15,4 @@
 <%= link_to 'Sign Up', new_user_registration_path %> 
 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
-<% end %>
 

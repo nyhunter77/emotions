@@ -3,6 +3,20 @@
     background-color: gold; }
 
   h1 {
-    font-family: 'Euphoria Script', cursive; } }
+    font-family: 'Euphoria Script', cursive; }
+
+  .happyface {
+    height: 400px;
+    width: 400px;
+    background-image: url("/assets/happy.gif"); }
+
+  .sadface {
+    height: 400px;
+    width: 400px;
+    background-repeat: none;
+    background-size: 100%;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-image: url("/assets/sad.jpg"); } }
 
 /*# sourceMappingURL=main.css.map */

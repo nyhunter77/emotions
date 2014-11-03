@@ -5,20 +5,19 @@ class HomeController < ApplicationController
   	@feeling = ""
   end
 
-  def show
-  	#@feeling = :feeling
-  	@feeling = params[:feeling]
+  def show 
+  	@feeling = params[:feeling].downcase
   	if @feeling == "happy" #Emotion.find(params[:feeling])
-  		puts "*"*50
-  		puts "happy"
-  		puts "*"*50
+  		# puts "*"*50
+  		# puts "happy"
+  		# puts "*"*50
   		@feeling = Emotion.find(1).feeling
   		flash[:notice] = "the emotion is happy"
   		redirect_to emotions_happy_path
   	else 
-  		puts "*"*50
-  		puts @feeling
-  		puts "*"*50
+  		# puts "*"*50
+  		# puts @feeling
+  		# puts "*"*50
   		@feeling = Emotion.find(2).feeling
   		flash[:alert] = "the emotion is sad"
   		redirect_to emotions_sad_path

@@ -5,9 +5,8 @@ class HomeController < ApplicationController
   	@feeling = ""
   end
 
-  def show
-  	#@feeling = :feeling
-  	@feeling = params[:feeling]
+  def show 
+  	@feeling = params[:feeling].downcase
   	if @feeling == "happy" #Emotion.find(params[:feeling])
   		# puts "*"*50
   		# puts "happy"

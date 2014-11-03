@@ -1,5 +1,5 @@
 <div>
-	<% if @emotion == "happy" %>
+	<% if @emotion.name == "happy" %>
 		<%= render '/emotions/happy' %>
 	<% else %>
 		<%= render '/emotions/sad' %>

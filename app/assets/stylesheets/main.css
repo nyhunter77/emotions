@@ -1,4 +1,4 @@
-@media all and (min-width: 320px) {
+@media all and (min-width: 0px) {
   a {
     text-decoration: none;
     color: #333; }
@@ -36,7 +36,7 @@
       display: inline-block;
       padding: 5px; }
     nav .buttons {
-      widows: 30%;
+      width: 30%;
       padding: 5px;
       float: right;
       display: inline-block; }
@@ -56,21 +56,41 @@
     width: 90%;
     height: 600px;
     margin: 0 auto; }
-
-  nav {
-    width: 100%;
-    height: 50px;
-    float: left;
-    font-size: 2em; }
-    nav .logo {
-      width: 20%;
-      display: inline-block;
-      padding: 5px; }
-    nav .buttons {
-      widows: 30%;
-      padding: 5px;
+    #wrapper nav {
+      width: 100%;
+      height: 50px;
+      float: left;
+      font-size: 2em; }
+      #wrapper nav .logo {
+        width: 20%;
+        display: inline-block;
+        padding: 5px; }
+      #wrapper nav .buttons {
+        width: 15%;
+        padding: 5px;
+        float: right; }
+        #wrapper nav .buttons div {
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px; }
+    #wrapper .sign_in {
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
       float: right;
-      display: inline-block; }
+      display: none; }
+    #wrapper .sign_up {
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      float: right;
+      display: none; }
 
   .home_index {
     width: 100%;
@@ -83,15 +103,17 @@
     .home_index .form {
       text-align: center;
       font-size: 3em; }
-      .home_index .form button {
-        margin: 10px;
-        font-size: 0.75em; }
+      .home_index .form .select {
+        width: 30%;
+        padding: 10px; }
+      .home_index .form .radio_button {
+        transform: scale(2);
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        top: -12px; }
       .home_index .form .button {
         margin: 10px;
-        width: 20%; }
-
-  .select {
-    width: 30%;
-    padding: 10px; } }
+        width: 20%; } }
 
 /*# sourceMappingURL=main.css.map */

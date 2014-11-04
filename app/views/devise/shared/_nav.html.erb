@@ -1,0 +1,19 @@
+<nav>
+	<% if current_user %>
+		<!-- logo, signout -->
+		<div class="logo">
+			<%= link_to "logo", root_path %>
+		</div>
+			<%= link_to "sign out", destroy_user_session_path, method: :delete, class: :button %>
+		</div> 
+	<% else %>
+		<!-- logo, sign in, sign up -->
+		<div class="logo">
+			<%= link_to "logo", root_path %>
+		</div>
+		<div class="buttons"> 
+			<div id="sign_in_button">Sign in</div> |
+			<div id="sign_up_button">Sign up</div> 
+		</div>
+	<% end %>
+</nav>

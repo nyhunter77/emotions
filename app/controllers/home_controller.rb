@@ -5,19 +5,7 @@ class HomeController < ApplicationController
   end 
 
   def show 
-  	@emotion = Emotion.find(params[:name])
-    puts @emotion
-  end
-
-
-  private
-
-  # def emotion_params
-  # 	params.require(:emotion).permit(:name)
-  # end
-
-  def set_feeling
-  	@emotion = Emotion.find(params[:id])
+  	@emotion = Emotion.find(params[:name]) 
   end
  
 end

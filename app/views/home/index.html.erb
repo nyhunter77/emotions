@@ -1,13 +1,18 @@
-<h1>I want to feel... </h1>
-  
-<%= form_tag(home_show_path, method: :post) do %>
-	<%= label_tag :name %>
-	<%= select_tag(:name, options_for_select([['happy', emotion_id("happy")],
-																						['sad',   emotion_id("sad")]])) %>
-	<%= submit_tag 'Submit' %>
-<% end %>
-
-<%= link_to 'Login', new_user_session_path %>
-<%= link_to 'Sign Up', new_user_registration_path %> 
-<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+<div class="home_index">
+	<h1>I want to feel... </h1>
+	 
+	<div class="form">
+		<%= form_tag(home_show_path, method: :post) do %> 
+			<%= select_tag(:name, options_for_select(
+				[['happy', emotion_id("happy")],
+				 ['sad',   emotion_id("sad")  ]
+				]),{class: :select}) %> 
+	    <br>  
+	    <div class="radio_button"><%= radio_button_tag 'select', :video %></div> Video | 
+	    <div class="radio_button"><%= radio_button_tag 'select', :music %></div> Music  
+	    <br>
+			<%= submit_tag 'Hit It!', class: :button %>
+		<% end %>
+	</div> 
+</div>
 

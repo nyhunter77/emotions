@@ -15,3 +15,14 @@
 //= require turbolinks
 //= require 'jquery.jplayer'
 //= require_tree .
+ 
+$(document).ready(function(){
+	$( "#sign_in_button" ).click(function() { 
+    $( ".sign_in" ).slideToggle();
+    $( ".sign_up" ).hide();
+  });
+  $( "#sign_up_button" ).click(function() { 
+    $( ".sign_up" ).slideToggle();
+    $( ".sign_in" ).hide();
+  }); 
+});

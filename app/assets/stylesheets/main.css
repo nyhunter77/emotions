@@ -148,8 +148,12 @@
     vertical-align: middle; }
 
   #menuContainer {
-    height: 50px; }
-    #menuContainer .menu {
+    height: 50px;
+    position: relative; }
+    #menuContainer .buttons {
+      position: absolute;
+      right: 75px; }
+    #menuContainer #menu {
       border: 1px solid black;
       border-radius: 5px;
       float: right;

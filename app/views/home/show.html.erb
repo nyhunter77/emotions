@@ -1,21 +1,18 @@
+<h1> The feeling is <%= @emotion.name %>. </h1>
 <div>
+	<!-- render '/emotions/happy'  -->
 	<% if @emotion.name == "happy" %>
-		<!-- render '/emotions/happy'  -->
-		<%= render '/emotions/happy' %>
-	<% else %>
-		 <!-- render '/emotions/sad'  -->
-		 <%= render '/emotions/sad_vid' %>
+		<% if @selected == 'video' %>
+			<%= render '/emotions/happy_vid' %>
+		<% else @selected == 'music' %>
+			<%= render '/emotions/images' %>
+		<% end %>
+	<!-- render '/emotions/sad'  -->
+	<% else @emotion.name == "sad" %>
+		<% if @selected == 'video' %>
+			<%= render '/emotions/sad_vid' %>
+		<% else @selected == 'music' %>
+			<%= render '/emotions/images' %>
+		<% end %>
 	<% end %>
-<<<<<<< HEAD
 </div> 
-
-
-<% if @selected == 'video' %>
-
-<% elsif @selected == 'music' %>
-
-<% else %>
-<% end %>
-=======
-</div>
->>>>>>> 50831e6df87265903ecad6023692033c1ff12c20

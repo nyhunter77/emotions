@@ -10,57 +10,92 @@
 		color: orange;
 	} 
 
-	.happyface {
-	height: 400px;
-	width: 400px;
-	background-image: url("/assets/happy.gif");
-	}
-
-	.sadface {
-		height: 400px;
-		width: 400px;	
-		background-repeat: none;
-		background-size: 100%;
-		background-position: center;
-		/*background-attachment: fixed;*/
-		background-image: url("/assets/sad.jpg");
-	}
+	%box_xs{
+		width: 200px;
+		height: auto;
+		font-size: 0.65em; 
+		padding-left: 15px;
+		padding-bottom: 10px;
+		border-radius: 5px;
+		border: 1px solid #333;
+		position:relative;
+		z-index: 50;
+		top: 300px; 
+		display: none;  
+	} 
 
 	#wrapper{
-		width: 95%;
-		height: 480px;  
+		width: 90%;
+		height: 480px;
+		// background-color: pink;
 		margin: 0 auto;
-	}
 
-	nav{
-		width: 100%; 
-		height: 30px; 
-		float: left; 
-		font-size: 1em;
-		.logo{
-			width: 20%;  
-			display: inline-block;
-			padding: 5px;
+		nav{
+			width: 100%; 
+			height: 30px;
+			background-color: gold; 
+			font-size: 1em;
+			.logo{
+				width: 100%; 
+				background-color:orange;
+				display: inline-block;
+				padding: 5px;
+				margin: 0 auto;
+				text-align: center;
+			} 
+			.buttons{
+				width: 90%; 
+				padding: 5px;
+				background-color:lightgreen; 
+				text-align: center;
+				position: absolute;
+				z-index: 50;
+				top: 250px; 
+				div{ 
+					display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
 		} 
-		.buttons{
-			width: 30%;
-			padding: 5px; 
-			float: right;
-			display: inline-block;
+		.sign_in{ 
+			@extend %box_xs;
+		} 
+
+		.sign_up{ 
+			@extend %box_xs; 
 		}
-	} 
-  
+	}
+	 
   .home_index{  
-  	width: 100%;
-  	position: relative;
-  	top: 100px; 
+  	width: 100%;  
+  	position: absolute;
+  	z-index: 10; 
+  	top: 0;
+
+  	// background-color: lightblue;
   	h1 { 
-			font-size: 3em;
-			font-family: 'Euphoria Script', cursive;
+			font-size: 2em; 
+			font-family: impact;
 			text-align: center;  
 		}
   	.form{
 			text-align: center;
+			font-size: 1em;
+			.select{ 
+		  	width: 70%; 
+		  	padding: 5px;  
+		  } 
+		  .radio_button{   
+				display: inline-block;
+				text-align: left; 
+				position: relative;
+				top: 2px;
+			}  
+			.button{ 
+				margin: 10px;
+				width: 50%;
+			}
 		}
   }
 	
@@ -72,6 +107,22 @@
 @media all and (min-width: 768px){}
 @media all and (min-width: 992px){}
 @media all and (min-width: 1200px){
+
+	%box_xl{
+		width: 250px;
+		height: auto;
+		font-size: 1em;
+		// background-color:lightblue;  
+		padding-left: 15px;
+		padding-bottom: 10px;
+		border-radius: 5px;
+		border: 1px solid #333;
+		float: right;  
+		position: relative;
+		top: 0px;
+		display: none; 
+	}
+
 	#wrapper{
 		width: 90%;
 		height: 600px;
@@ -81,20 +132,24 @@
 		nav{
 			width: 100%; 
 			height: 50px;
-			// background-color: gold;
+			background-color: gold;
 			float: left; 
 			font-size: 2em;
+			margin: 0 auto;
 			.logo{
 				width: 20%; 
-				// background-color:orange;
+				background-color:orange;
 				display: inline-block;
 				padding: 5px;
 			} 
 			.buttons{
-				width: 15%;
+				width: 25%; 
 				padding: 5px;
-				// background-color:lightgreen;  
+				background-color:lightgreen;  
 				float: right;
+				text-align: center;
+				position: relative;
+				top: 0px;
 				div{ 
 					display: inline-block;
 					padding-left: 10px;
@@ -103,27 +158,11 @@
 			}
 		} 
 		.sign_in{ 
-			width: 250px;
-			height: auto;
-			// background-color:lightblue;  
-			padding-left: 15px;
-			padding-bottom: 10px;
-			border-radius: 5px;
-			border: 1px solid #333;
-			float: right;  
-			display: none; 
-			} 
+			@extend %box_xl;
+		} 
 
 		.sign_up{ 
-			width: 250px;
-			height: auto;
-			// background-color:lightblue;  
-			padding-left: 15px;
-			padding-bottom: 10px;
-			border-radius: 5px;
-			border: 1px solid #333;
-			float: right;  
-			display: none; 
+			@extend %box_xl; 
 		}
 	}
 	 

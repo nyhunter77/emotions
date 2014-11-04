@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20141103170547) do
 
   create_table "emotions", force: true do |t|
     t.string   "name"
+    t.boolean  "video"
+    t.boolean  "music"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

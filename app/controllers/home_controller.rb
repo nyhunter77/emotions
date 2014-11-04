@@ -5,7 +5,8 @@ class HomeController < ApplicationController
   end 
 
   def show 
-  	@emotion = Emotion.find(params[:name]) 
+  	@emotion = Emotion.find(params[:name])  
+    @selected = params[:radio]
   end
  
 end

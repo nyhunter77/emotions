@@ -1,7 +1,11 @@
 <h1> The feeling is <%= @emotion.name %>. </h1>
-<img src="/assets/sad.jpg" alt="sad face"> <br/>
+<!-- <img src="/assets/sad.jpg" alt="sad face"> <br/>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/EEYm2zA7h_k" frameborder="0" allowfullscreen></iframe> <br/>
+<iframe width="560" height="315" src="//www.youtube.com/embed/EEYm2zA7h_k" frameborder="0" allowfullscreen></iframe> <br/> -->
+
+<div>
+	<%= render '/emotions/images' %>
+</div>
 
 <% content_for :stylesheets do %>
   	body {background-color: lightblue;}

@@ -117,12 +117,19 @@ imageEmotion44 = ImageEmotion.create(image_id: 44, emotion_id: 2)
 imageEmotion45 = ImageEmotion.create(image_id: 45, emotion_id: 2)
 imageEmotion46 = ImageEmotion.create(image_id: 46, emotion_id: 2)
 imageEmotion47 = ImageEmotion.create(image_id: 47, emotion_id: 2)
-
  
-video1 = Video.create(name: 'Minions Working Out',                file: "www.youtube.com/embed/KLMJPKylg2Y")
+video1 = Video.create(name: 'Minions Working Out', file: "www.youtube.com/embed/KLMJPKylg2Y")
 video2 = Video.create(name: "Saddest Commercial You'll Ever See", file: "www.youtube.com/embed/EEYm2zA7h_k")
-video3 = Video.create(name: 'Just a very Sad Story',              file: "www.youtube.com/embed/jXmluLg2XP0")
+video3 = Video.create(name: 'Just a very Sad Story', file: "www.youtube.com/embed/jXmluLg2XP0")
+video4 = Video.create(name: "Collection of happy videos", file: "www.youtube.com/embed/3jRiRHwL7xM")
+video5 = Video.create(name: "Happy Dogs", file: "www.youtube.com/embed/hGyZ2ETCTVU"
+video6 = Video.create(name: "Brian Williams Rapping", file: "www.youtube.com/embed/-YCeIgt7hMs"
+
 
 videoEmotion1 = VideoEmotion.create(video_id: 1, emotion_id: 1)
 videoEmotion2 = VideoEmotion.create(video_id: 2, emotion_id: 2)
-videoEmotion3 = VideoEmotion.create(video_id: 3, emotion_id: 2) 
+videoEmotion3 = VideoEmotion.create(video_id: 3, emotion_id: 2)
+videoEmotion4 = VideoEmotion.create(video_id: 4, emotion_id: 1)
+videoEmotion5 = VideoEmotion.create(video_id: 5, emotion_id: 1)
+videoEmotion6 = VideoEmotion.create(video_id: 6, emotion_id: 1)
+ 

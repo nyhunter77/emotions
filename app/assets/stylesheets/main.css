@@ -149,7 +149,7 @@
 
   #menuContainer {
     height: 50px; }
-    #menuContainer #menu {
+    #menuContainer .menu {
       border: 1px solid black;
       border-radius: 5px;
       float: right;

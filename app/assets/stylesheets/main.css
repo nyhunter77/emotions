@@ -1,24 +1,19 @@
 /*
-Syntax error: Invalid CSS after "...a4b0e3675d5cc15": expected "{", was ""
-        on line 171 of app/assets/stylesheets/main.scss
+Syntax error: Invalid CSS after "}": expected selector or at-rule, was "}"
+        on line 227 of app/assets/stylesheets/main.scss
 
-166:  
-167: 
-168: 
-169: 
-170: >>>>>>> 8edc19f95d24f8a3bc7365db2a4b0e3675d5cc15
+222: 	}
+223: }
+224: 
+225: 
+226: 
+227: }
 
 Backtrace:
-app/assets/stylesheets/main.scss:171
+app/assets/stylesheets/main.scss:227
 /Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
 /Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:534:in `block'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
+/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
 /Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
 /Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
 /Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
@@ -37,4 +32,4 @@ app/assets/stylesheets/main.scss:171
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...a4b0e3675d5cc15\": expected \"{\", was \"\"\A         on line 171 of app/assets/stylesheets/main.scss\A \A 166:  \A 167: \A 168: \A 169: \A 170: >>>>>>> 8edc19f95d24f8a3bc7365db2a4b0e3675d5cc15"; }
+  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 227 of app/assets/stylesheets/main.scss\A \A 222: 	}\A 223: }\A 224: \A 225: \A 226: \A 227: }"; }

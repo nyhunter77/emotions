@@ -30,5 +30,21 @@ module ApplicationHelper
 
     return imgs
 	end
+
+	def find_videos(emotion)
+		vid_ids = []
+  	vids = []
+
+		VideoEmotion.where(emotion_id: emotion_id(emotion)).each do |ve|
+      vid_ids << ve.video_id
+    end
+
+    vid_ids.each do |id|
+      vid = Video.find(id)
+    vids << vid
+    end
+
+    return vids
+	end
  
 end

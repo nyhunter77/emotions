@@ -1,19 +1,34 @@
-<h1> happy vid partial </h1>
-
-  <% @video = Video.find(rand(0..Video.last.id)) %>
-  <% @name = Video.find(@video).name %>
-  <% @file = Video.find(@video).file %>
-
 
 <% if @emotion.name == "happy" %>
+	<% @happyVids = find_videos('happy') %>
+	
+
+	<% puts '$' *50 %>
+  <% @video = @happyVids[rand(0..@happyVids.size-1)] %>
+  <% puts @video.file %>
+  <% @name = @video.name %>
+  <% @file = @video.file %>  
+  <% puts '$' *50 %>
+
 	<% content_for :stylesheets do %>
   	body {background-color: pink;}
 	<% end %>
-<% else %>
+<% elsif @emotion.name == "sad" %>
+	<% @sadVids = find_videos('sad') %>
+
+	<% @video = @sadVids[rand(0..@sadVids.size-1)] %>
+  <% @name = @video.name %>
+  <% @file = @video.file %>  
+
 	<% content_for :stylesheets do %>
   	body {background-color: lightblue;}
 	<% end %>
+
+<% else %>
+
 <% end %>
+
+
 
 <div id="menuContainer">
 

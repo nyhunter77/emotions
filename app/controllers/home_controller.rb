@@ -21,7 +21,8 @@ class HomeController < ApplicationController
   def show 
   	puts '*' *50
   	@videos = Video.all
-  	@emote = Video.find(0..Video.last.id).emotions
+  
+  	# @emote = Video.find(0..Video.last.id).emotions
   	puts @emote
   		#@videoEmotion = Video.find(0..Video.last.id).emotions.name
   	# @video = Video.find(rand(0..Video.last.id))

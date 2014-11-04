@@ -20,6 +20,9 @@ class HomeController < ApplicationController
 
   def show 
   	@emotion = Emotion.find(params[:name]) 
+  	@images = Image.all
+  	@image_emotions = ImageEmotion.all
+  	
   end
  
 end

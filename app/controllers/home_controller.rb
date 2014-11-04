@@ -1,17 +1,17 @@
 class HomeController < ApplicationController
 
 	def video_success
-		@video = params[:name]
+		@name = params[:name]
 		@file = params[:file]
 		puts '*' *50
-		puts @video
+		puts @name
 		puts @file
 		puts '*' *50
-		if @video == "1"
-			Video.create name:"happy", file:(params[:file])
-		else
-			Video.create name:"sad", file:(params[:file])
-		end
+		# if @video == "1"
+			Video.create name:(@name), file:(@file)
+		# else
+		# 	Video.create name:"sad", file:(params[:file])
+		# end
 	end
 
   def index
@@ -19,7 +19,19 @@ class HomeController < ApplicationController
   end 
 
   def show 
+  	puts '*' *50
+  	@videos = Video.all
+  	@emote = Video.find(0..Video.last.id).emotions
+  	puts @emote
+  		#@videoEmotion = Video.find(0..Video.last.id).emotions.name
+  	# @video = Video.find(rand(0..Video.last.id))
+  	# @name = Video.find(@video).name
+  	# @file = Video.find(@video).file
   	@emotion = Emotion.find(params[:name]) 
+  	puts @emotion.name
+  	puts '*' *50
   end
  
 end
+
+

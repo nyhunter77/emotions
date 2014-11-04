@@ -31,12 +31,12 @@ $(document).on('ready page:load', function () {
 
 	$('#menuField').hide();
 
-	$('#menu').mousedown(function() {
+	$('.menu').mousedown(function() {
 		$('#menu').fadeOut(500);
 		$('#menuField').fadeIn(500);
 	});
 
-	$('#menuField').mouseleave(function() { 
+	$('.menu').mouseleave(function() { 
 		$('#menuField').fadeOut(500);
 		$('#menu').fadeIn(500);
 	});

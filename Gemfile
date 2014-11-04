@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'quiet_assets'
 group :development, :test do 
 	gem 'rspec-rails', '~> 3.0.0'
 	gem 'database_cleaner'
+	gem 'quiet_assets' 
 end
 
 gem 'devise'

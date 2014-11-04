@@ -1,3 +1,4 @@
+
 @media all and (min-width: 0px){
 	body {  
 	} 
@@ -9,7 +10,7 @@
 		text-decoration: none;
 		color: orange;
 	} 
-
+ 
 	%box_xs{
 		width: 200px;
 		height: auto;
@@ -22,7 +23,7 @@
 		z-index: 50;
 		top: 300px; 
 		display: none;  
-	} 
+	}  
 
 	#wrapper{
 		width: 90%;
@@ -98,9 +99,10 @@
 			}
 		}
   }
-	
+}
 
-
+#slides {
+  display: none;
 }
   
 @media all and (min-width: 480px){} 
@@ -198,9 +200,56 @@
 		}
   }
 
+/*----------------- video partial page css ------------------*/
   
-}
- 
+	#videoBox {
+	text-align: center;
+	vertical-align: middle;
+	}
 
+	#menuContainer {
+		height:50px;
+
+		#menu {
+			border: 1px solid black;
+			border-radius: 5px;
+			float: right;
+			margin-top: 0;
+			margin-right: 15px;
+			margin-bottom: 10px;
+			display: inline-block;
+			padding: 10px;
+			background-color: lightgray;
+		}
+	}
+
+	.space {
+		height: 10px;
+	}
+
+	#menuField {
+		float: right;
+		font-size: 2em;
+		background-color: lightgray;
+		padding-right: 25px;
+		border: 1px solid black;
+		border-radius: 5px;
+		margin-bottom: 10px;
+
+
+		ul {
+			list-style: none;
+		}
+	}
+
+	#select_video {
+		width: 300px;
+	}
+}
+
+
+
+
+ 
 
 

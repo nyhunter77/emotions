@@ -16,7 +16,7 @@
 //= require 'jquery.jplayer'
 //= require_tree .
  
-$(document).ready(function(){
+$(document).on('ready page:load', function () {
 	$( "#sign_in_button" ).click(function() { 
     $( ".sign_in" ).slideToggle();
     $( ".sign_up" ).hide();
@@ -25,4 +25,20 @@ $(document).ready(function(){
     $( ".sign_up" ).slideToggle();
     $( ".sign_in" ).hide();
   }); 
+
+//----------------- video_partial --------------------------//
+
+
+	$('#menuField').hide();
+
+	$('#menu').mousedown(function() {
+		$('#menuContainer').fadeOut(500);
+		$('#menuField').fadeIn(500);
+	});
+
+	$('#menuField').mouseleave(function() { 
+		$('#menuField').fadeOut(500);
+		$('#menuContainer').fadeIn(500);
+	
+
 });

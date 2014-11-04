@@ -1,21 +1,16 @@
 
 <% if @emotion.name == "happy" %>
-	<% @happyVids = find_videos('happy') %>
-	
-
-	<% puts '$' *50 %>
-  <% @video = @happyVids[rand(0..@happyVids.size-1)] %>
-  <% puts @video.file %>
+	<% @happyVids = find_videos('happy') %> 
+  <% @video = @happyVids[rand(0..@happyVids.size-1)] %> 
   <% @name = @video.name %>
-  <% @file = @video.file %>  
-  <% puts '$' *50 %>
+  <% @file = @video.file %>   
 
 	<% content_for :stylesheets do %>
   	body {background-color: pink;}
 	<% end %>
 <% elsif @emotion.name == "sad" %>
-	<% @sadVids = find_videos('sad') %>
 
+	<% @sadVids = find_videos('sad') %> 
 	<% @video = @sadVids[rand(0..@sadVids.size-1)] %>
   <% @name = @video.name %>
   <% @file = @video.file %>  

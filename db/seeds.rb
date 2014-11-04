@@ -10,23 +10,18 @@
 
 emotion1 = Emotion.create(name: 'happy')
 emotion2 = Emotion.create(name: 'sad')
-
-# Video.create(name: 'happy', file: "<iframe width="853" height="480" src="//www.youtube.com/embed/KLMJPKylg2Y" frameborder="0" allowfullscreen></iframe>")
-# Video.create(name: 'sad', file: "<iframe width="853" height="480" src="//www.youtube.com/embed/EEYm2zA7h_k" frameborder="0" allowfullscreen></iframe>")
-# Video.create(name: 'sad', file: "<iframe width="853" height="480" src="//www.youtube.com/embed/jXmluLg2XP0" frameborder="0" allowfullscreen></iframe>")
-
-
+  
 # Happy Images #
 
-image1 = Image.create(name: 'are-you-happy', 			file: "https://s3.amazonaws.com/emotionsproject/happy/are-you-happy.jpg")
-image2 = Image.create(name: 'be-happy', 					file: "https://s3.amazonaws.com/emotionsproject/happy/be_happy-wallpaper.jpg")
-image3 = Image.create(name: 'because-im-happy', 	file: "https://s3.amazonaws.com/emotionsproject/happy/because-im-happy.jpg")
-image4 = Image.create(name: 'birthday=mouse', 		file: "https://s3.amazonaws.com/emotionsproject/happy/birthday-mouse.jpg")
-image5 = Image.create(name: 'cat-glasses', 				file: "https://s3.amazonaws.com/emotionsproject/happy/cat-glasses.jpg")
-image6 = Image.create(name: 'cereal-smiley', 			file: "https://s3.amazonaws.com/emotionsproject/happy/cereal-smiley.jpg")
-image7 = Image.create(name: 'chamomile', 					file: "https://s3.amazonaws.com/emotionsproject/happy/chamomile.jpg")
-image8 = Image.create(name: 'color-run', 					file: "https://s3.amazonaws.com/emotionsproject/happy/color-run.jpg")
-image9 = Image.create(name: 'finger-friends', 		file: "https://s3.amazonaws.com/emotionsproject/happy/finger-friends.jpg")
+image1  = Image.create(name: 'are-you-happy', 		file: "https://s3.amazonaws.com/emotionsproject/happy/are-you-happy.jpg")
+image2  = Image.create(name: 'be-happy', 					file: "https://s3.amazonaws.com/emotionsproject/happy/be_happy-wallpaper.jpg")
+image3  = Image.create(name: 'because-im-happy', 	file: "https://s3.amazonaws.com/emotionsproject/happy/because-im-happy.jpg")
+image4  = Image.create(name: 'birthday=mouse', 		file: "https://s3.amazonaws.com/emotionsproject/happy/birthday-mouse.jpg")
+image5  = Image.create(name: 'cat-glasses', 			file: "https://s3.amazonaws.com/emotionsproject/happy/cat-glasses.jpg")
+image6  = Image.create(name: 'cereal-smiley', 		file: "https://s3.amazonaws.com/emotionsproject/happy/cereal-smiley.jpg")
+image7  = Image.create(name: 'chamomile', 				file: "https://s3.amazonaws.com/emotionsproject/happy/chamomile.jpg")
+image8  = Image.create(name: 'color-run', 				file: "https://s3.amazonaws.com/emotionsproject/happy/color-run.jpg")
+image9  = Image.create(name: 'finger-friends', 		file: "https://s3.amazonaws.com/emotionsproject/happy/finger-friends.jpg")
 image10 = Image.create(name: 'funny-kitten', 			file: "https://s3.amazonaws.com/emotionsproject/happy/funny-kitten.jpg")
 image11 = Image.create(name: 'happy-1', 					file: "https://s3.amazonaws.com/emotionsproject/happy/happy-1.jpg")
 image12 = Image.create(name: 'happy-baby', 				file: "https://s3.amazonaws.com/emotionsproject/happy/happy-baby.jpg")
@@ -46,15 +41,15 @@ image25 = Image.create(name: 'winter-happiness', 	file: "https://s3.amazonaws.co
 
 # Happy ImageEmotions #
 
-imageEmotion1 = ImageEmotion.create(image_id: 1, emotion_id: 1)
-imageEmotion2 = ImageEmotion.create(image_id: 2, emotion_id: 1)
-imageEmotion3 = ImageEmotion.create(image_id: 3, emotion_id: 1)
-imageEmotion4 = ImageEmotion.create(image_id: 4, emotion_id: 1)
-imageEmotion5 = ImageEmotion.create(image_id: 5, emotion_id: 1)
-imageEmotion6 = ImageEmotion.create(image_id: 6, emotion_id: 1)
-imageEmotion7 = ImageEmotion.create(image_id: 7, emotion_id: 1)
-imageEmotion8 = ImageEmotion.create(image_id: 8, emotion_id: 1)
-imageEmotion9 = ImageEmotion.create(image_id: 9, emotion_id: 1)
+imageEmotion1 =  ImageEmotion.create(image_id: 1,  emotion_id: 1)
+imageEmotion2 =  ImageEmotion.create(image_id: 2,  emotion_id: 1)
+imageEmotion3 =  ImageEmotion.create(image_id: 3,  emotion_id: 1)
+imageEmotion4 =  ImageEmotion.create(image_id: 4,  emotion_id: 1)
+imageEmotion5 =  ImageEmotion.create(image_id: 5,  emotion_id: 1)
+imageEmotion6 =  ImageEmotion.create(image_id: 6,  emotion_id: 1)
+imageEmotion7 =  ImageEmotion.create(image_id: 7,  emotion_id: 1)
+imageEmotion8 =  ImageEmotion.create(image_id: 8,  emotion_id: 1)
+imageEmotion9 =  ImageEmotion.create(image_id: 9,  emotion_id: 1)
 imageEmotion10 = ImageEmotion.create(image_id: 10, emotion_id: 1)
 imageEmotion11 = ImageEmotion.create(image_id: 11, emotion_id: 1)
 imageEmotion12 = ImageEmotion.create(image_id: 12, emotion_id: 1)
@@ -123,43 +118,11 @@ imageEmotion45 = ImageEmotion.create(image_id: 45, emotion_id: 2)
 imageEmotion46 = ImageEmotion.create(image_id: 46, emotion_id: 2)
 imageEmotion47 = ImageEmotion.create(image_id: 47, emotion_id: 2)
 
+ 
+video1 = Video.create(name: 'Minions Working Out',                file: "www.youtube.com/embed/KLMJPKylg2Y")
+video2 = Video.create(name: "Saddest Commercial You'll Ever See", file: "www.youtube.com/embed/EEYm2zA7h_k")
+video3 = Video.create(name: 'Just a very Sad Story',              file: "www.youtube.com/embed/jXmluLg2XP0")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-Video1 = Video.create(name: 'Minions Working Out', file: "www.youtube.com/embed/KLMJPKylg2Y")
-Video2 = Video.create(name: "Saddest Commercial You'll Ever See", file: "www.youtube.com/embed/EEYm2zA7h_k")
-Video3 = Video.create(name: 'Just a very Sad Story', file: "www.youtube.com/embed/jXmluLg2XP0")
-
-VideoEmotion.create(video_id: 1, emotion_id: 1)
-VideoEmotion.create(video_id: 2, emotion_id: 2)
-VideoEmotion.create(video_id: 3, emotion_id: 2)
->>>>>>> aff3dc4f11da5e0c4b77fd68bdce965915c83ccf
+videoEmotion1 = VideoEmotion.create(video_id: 1, emotion_id: 1)
+videoEmotion2 = VideoEmotion.create(video_id: 2, emotion_id: 2)
+videoEmotion3 = VideoEmotion.create(video_id: 3, emotion_id: 2) 

@@ -3,14 +3,14 @@
 	<!-- render '/emotions/happy'  -->
 	<% if @emotion.name == "happy" %>
 		<% if @selected == 'video' %>
-			<%= render '/emotions/happy_vid' %>
+			<%= render '/emotions/video' %>
 		<% else @selected == 'music' %>
 			<%= render '/emotions/images' %>
 		<% end %>
 	<!-- render '/emotions/sad'  -->
 	<% else @emotion.name == "sad" %>
 		<% if @selected == 'video' %>
-			<%= render '/emotions/sad_vid' %>
+			<%= render '/emotions/video' %>
 		<% else @selected == 'music' %>
 			<%= render '/emotions/images' %>
 		<% end %>

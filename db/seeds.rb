@@ -153,3 +153,13 @@ imageEmotion47 = ImageEmotion.create(image_id: 47, emotion_id: 2)
 
 
 
+<<<<<<< HEAD
+=======
+Video1 = Video.create(name: 'Minions Working Out', file: "www.youtube.com/embed/KLMJPKylg2Y")
+Video2 = Video.create(name: "Saddest Commercial You'll Ever See", file: "www.youtube.com/embed/EEYm2zA7h_k")
+Video3 = Video.create(name: 'Just a very Sad Story', file: "www.youtube.com/embed/jXmluLg2XP0")
+
+VideoEmotion.create(video_id: 1, emotion_id: 1)
+VideoEmotion.create(video_id: 2, emotion_id: 2)
+VideoEmotion.create(video_id: 3, emotion_id: 2)
+>>>>>>> aff3dc4f11da5e0c4b77fd68bdce965915c83ccf

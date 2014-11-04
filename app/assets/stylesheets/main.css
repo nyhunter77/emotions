@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0; }
+
 @media all and (min-width: 0px) {
   a {
     text-decoration: none;
@@ -72,43 +76,41 @@
       .home_index .form .button {
         margin: 10px;
         width: 50%; } }
-#slides {
-  display: none; }
-
 @media all and (min-width: 1200px) {
   #wrapper .sign_in, #wrapper .sign_up {
-    width: 250px;
+    width: 200px;
     height: auto;
     font-size: 1em;
-    padding-left: 15px;
-    padding-bottom: 10px;
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid #333;
     float: right;
     position: relative;
-    top: 0px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: auto;
     display: none; }
 
   #wrapper {
-    width: 90%;
+    width: 100%;
     height: 600px;
     margin: 0 auto; }
     #wrapper nav {
       width: 100%;
-      height: 50px;
-      background-color: gold;
-      float: left;
-      font-size: 2em;
-      margin: 0 auto; }
+      height: 70px;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-size: 1.5em;
+      margin: 0 auto;
+      padding-top: 15px; }
       #wrapper nav .logo {
         width: 20%;
-        background-color: orange;
+        background-color: rgba(255, 255, 255, 0.5);
         display: inline-block;
         padding: 5px; }
       #wrapper nav .buttons {
         width: 25%;
         padding: 5px;
-        background-color: lightgreen;
+        background-color: rgba(255, 255, 255, 0.5);
         float: right;
         text-align: center;
         position: relative;
@@ -176,3 +178,8 @@
 
   #select_video {
     width: 300px; } }
+/*-------------------- images partial -----------------------*/
+.jp-jplayer {
+  z-index: 10;
+  margin-bottom: -100px;
+  float: right; }

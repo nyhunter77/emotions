@@ -67,7 +67,7 @@
         this.options.effect.slide.speed = this.options.effect.slide.speed / 2;
       }
       $element.css({
-        overflow: "hidden"
+        overflow: "visible"
       });
       $element.slidesContainer = $element.children().not(".slidesjs-navigation", $element).wrapAll("<div class='slidesjs-container'>", $element).parent().css({
         overflow: "hidden",

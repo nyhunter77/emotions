@@ -16,7 +16,7 @@ $(document).ready(function(){
     <div id="slides">
       <% find_images('happy').each do |image| %>
         <img src =<%= image.file %>>
-      <% end %>
+      <% end %> 
     </div>
   <% else @emotion.name == "sad" %>
     <div id="slides">
@@ -25,7 +25,10 @@ $(document).ready(function(){
       <% end %>
     </div>
   <% end %>
+
+  <%= render '/emotions/jplayer' %> 
 </body>
+
 
 
 

@@ -35,15 +35,14 @@
   <div id="wrapper">
     <header>
       <%= render '/devise/shared/nav' %>
+      <div class="sign_in">
+        <%= render '/devise/sessions/new' %>
+      </div>
+      <div class="sign_up">
+        <%= render '/devise/registrations/new' %>
+      </div> 
     </header> 
-
-    <div class="sign_in">
-      <%= render '/devise/sessions/new' %>
-    </div>
-
-    <div class="sign_up">
-      <%= render '/devise/registrations/new' %>
-    </div>   
+  
 
     <% if notice %><div id="notice"><%= notice %></div><% end %>
     <% if alert %><div id="alert"><%= alert %></div><% end %>

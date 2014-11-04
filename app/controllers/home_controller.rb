@@ -19,17 +19,17 @@ class HomeController < ApplicationController
   end 
 
   def show 
-  	puts '*' *50
-  	@videos = Video.all
-  	@emote = Video.find(0..Video.last.id).emotions
-  	puts @emote
+  	# puts '*' *50
+  	# @videos = Video.all
+  	# @emote = Video.find(0..Video.last.id).emotions
+  	# puts @emote
   		#@videoEmotion = Video.find(0..Video.last.id).emotions.name
   	# @video = Video.find(rand(0..Video.last.id))
   	# @name = Video.find(@video).name
   	# @file = Video.find(@video).file
-  	@emotion = Emotion.find(params[:name]) 
-  	puts @emotion.name
-  	puts '*' *50
+  	# @emotion = Emotion.find(params[:name]) 
+  	# puts @emotion.name
+  	# puts '*' *50
 
   	@emotion = Emotion.find(params[:name])  
     @selected = params[:radio]

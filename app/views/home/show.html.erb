@@ -1,5 +1,4 @@
-<h1> The feeling is <%= @emotion.name %>. </h1>
-<div>
+<div class="render_page">
 	<!-- render '/emotions/happy'  -->
 	<% if @emotion.name == "happy" %>
 		<% if @selected == 'video' %>
@@ -7,6 +6,7 @@
 		<% else @selected == 'music' %>
 			<%= render '/emotions/images' %>
 		<% end %>
+
 	<!-- render '/emotions/sad'  -->
 	<% else @emotion.name == "sad" %>
 		<% if @selected == 'video' %>

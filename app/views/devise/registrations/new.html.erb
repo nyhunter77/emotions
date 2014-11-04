@@ -3,25 +3,21 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :fname, 'First Name' %><br />
-  <%= f.email_field :fname, autofocus: true %></div>
-
-  <div><%= f.label :lname, 'Last Name' %><br />
-  <%= f.email_field :lname %></div>
-
-  <div><%= f.label :username %><br />
-  <%= f.email_field :username %></div>
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
-  <div><%= f.label :password %> <% if @validatable %><i>(<%= @minimum_password_length %> characters minimum)</i><% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
-
+  <div><%= f.email_field :fname, placeholder: 'First Name',  autofocus: true %></div>
+	<div class="space"></div>
+  <div><%= f.email_field :lname, placeholder: 'Last Name' %></div>
+	<div class="space"></div>
+  <div><%= f.email_field :username, placeholder: 'Desired Username' %></div>
+	<div class="space"></div>
+  <div><%= f.email_field :email, placeholder: 'Email' %></div>
+	<div class="space"></div>
+  <div><%= f.password_field :password, placeholder: 'Password', autocomplete: "off" %></div>
+	<div class="space"></div>
+  <div><%= f.password_field :password_confirmation, placeholder: 'Password Again', 
+  				autocomplete: "off" %></div>
+	<div class="space"></div>
   <div><%= f.submit "Sign up" %></div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>

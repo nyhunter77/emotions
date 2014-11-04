@@ -1,35 +1,167 @@
-/*
-Syntax error: Invalid CSS after "}": expected selector or at-rule, was "}"
-        on line 227 of app/assets/stylesheets/main.scss
+@media all and (min-width: 0px) {
+  a {
+    text-decoration: none;
+    color: #333; }
 
-222: 	}
-223: }
-224: 
-225: 
-226: 
-227: }
+  a:hover {
+    text-decoration: none;
+    color: orange; }
 
-Backtrace:
-app/assets/stylesheets/main.scss:227
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Users/kenguie/.rvm/gems/ruby-2.1.2/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"}\"\A         on line 227 of app/assets/stylesheets/main.scss\A \A 222: 	}\A 223: }\A 224: \A 225: \A 226: \A 227: }"; }
+  /*@media all and (min-width: 320px){
+  	body { 
+  		width: 950px;
+  		margin: 0 auto;
+  	} 
+  
+  	h1 {
+  		font-family: 'Euphoria Script', cursive;
+  	}*/
+  /*----------stayed on merge, not sure if needed anymore-------------*/
+  		/*	.happyface {
+  	height: 400px;
+  	width: 400px;
+  	background-image: url("/assets/happy.gif");
+  	}
+  
+  	.sadface {
+  		height: 400px;
+  		width: 400px;	
+  		background-repeat: none;
+  		background-size: 100%;
+  		background-position: center;
+  		/*background-attachment: fixed;*/
+  /*		background-image: url("/assets/sad.jpg");
+  */
+  /*}*/
+  #wrapper {
+    width: 95%;
+    height: 480px;
+    margin: 0 auto; }
+
+  nav {
+    width: 100%;
+    height: 30px;
+    float: left;
+    font-size: 1em; }
+    nav .logo {
+      width: 20%;
+      display: inline-block;
+      padding: 5px; }
+    nav .buttons {
+      width: 30%;
+      padding: 5px;
+      float: right;
+      display: inline-block; }
+
+  .home_index {
+    width: 100%;
+    position: relative;
+    top: 100px; }
+    .home_index h1 {
+      font-size: 3em;
+      font-family: 'Euphoria Script', cursive;
+      text-align: center; }
+    .home_index .form {
+      text-align: center; } }
+#slides {
+  display: none; }
+
+@media all and (min-width: 1200px) {
+  #wrapper {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto; }
+    #wrapper nav {
+      width: 100%;
+      height: 50px;
+      float: left;
+      font-size: 2em; }
+      #wrapper nav .logo {
+        width: 20%;
+        display: inline-block;
+        padding: 5px; }
+      #wrapper nav .buttons {
+        width: 15%;
+        padding: 5px;
+        float: right; }
+        #wrapper nav .buttons div {
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px; }
+    #wrapper .sign_in {
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      float: right;
+      display: none; }
+    #wrapper .sign_up {
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      float: right;
+      display: none; }
+
+  .home_index {
+    width: 100%;
+    position: relative;
+    top: 100px; }
+    .home_index h1 {
+      font-size: 5em;
+      font-family: impact;
+      text-align: center; }
+    .home_index .form {
+      text-align: center;
+      font-size: 3em; }
+      .home_index .form .select {
+        width: 30%;
+        padding: 10px; }
+      .home_index .form .radio_button {
+        transform: scale(2);
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        top: -12px; }
+      .home_index .form .button {
+        margin: 10px;
+        width: 20%; }
+
+  /*----------------- video partial page css ------------------*/
+  #videoBox {
+    text-align: center;
+    vertical-align: middle; }
+
+  #menuContainer {
+    height: 50px; }
+    #menuContainer #menu {
+      border: 1px solid black;
+      border-radius: 5px;
+      float: right;
+      margin-top: 0;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      display: inline-block;
+      padding: 10px;
+      background-color: lightgray; }
+
+  .space {
+    height: 10px; }
+
+  #menuField {
+    float: right;
+    font-size: 2em;
+    background-color: lightgray;
+    padding-right: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+    #menuField ul {
+      list-style: none; }
+
+  #select_video {
+    width: 300px; } }

@@ -30,6 +30,10 @@ class HomeController < ApplicationController
   	@emotion = Emotion.find(params[:name]) 
   	puts @emotion.name
   	puts '*' *50
+
+  	@emotion = Emotion.find(params[:name])  
+    @selected = params[:radio]
+
   end
  
 end

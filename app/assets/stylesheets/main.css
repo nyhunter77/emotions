@@ -179,4 +179,7 @@
       list-style: none; }
 
   #select_video {
-    width: 300px; } }
+    width: 300px; }
+
+  .footspace {
+    height: 75px; } }

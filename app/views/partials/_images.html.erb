@@ -1,0 +1,40 @@
+<script>
+  $(document).ready(function(){
+    $(function(){
+      $("#slides").slidesjs({
+        maxWidth: 1000,
+        maxHeight: 625
+      });
+    });
+  });
+</script>
+
+
+<body>
+  <% if @emotion.name %>
+    <div id="slides">
+      <% find_images(@emotion.name).each do |image| %>
+        <img src =<%= image.file %>>
+      <% end %>
+    </div>
+  <% else %> 
+    <!-- IMAGE NOT FOUND -->
+  <% end %>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

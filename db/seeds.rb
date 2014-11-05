@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+Admin.create(email: mario@gmail.com, password: '11111111', password_confirmation: '11111111')
 
 emotion1 = Emotion.create(name: 'happy')
 emotion2 = Emotion.create(name: 'sad')
@@ -41,15 +41,15 @@ image25 = Image.create(name: 'winter-happiness', 	file: "https://s3.amazonaws.co
 
 # Happy ImageEmotions #
 
-imageEmotion1 =  ImageEmotion.create(image_id: 1,  emotion_id: 1)
-imageEmotion2 =  ImageEmotion.create(image_id: 2,  emotion_id: 1)
-imageEmotion3 =  ImageEmotion.create(image_id: 3,  emotion_id: 1)
-imageEmotion4 =  ImageEmotion.create(image_id: 4,  emotion_id: 1)
-imageEmotion5 =  ImageEmotion.create(image_id: 5,  emotion_id: 1)
-imageEmotion6 =  ImageEmotion.create(image_id: 6,  emotion_id: 1)
-imageEmotion7 =  ImageEmotion.create(image_id: 7,  emotion_id: 1)
-imageEmotion8 =  ImageEmotion.create(image_id: 8,  emotion_id: 1)
-imageEmotion9 =  ImageEmotion.create(image_id: 9,  emotion_id: 1)
+imageEmotion1  = ImageEmotion.create(image_id: 1,  emotion_id: 1)
+imageEmotion2  = ImageEmotion.create(image_id: 2,  emotion_id: 1)
+imageEmotion3  = ImageEmotion.create(image_id: 3,  emotion_id: 1)
+imageEmotion4  = ImageEmotion.create(image_id: 4,  emotion_id: 1)
+imageEmotion5  = ImageEmotion.create(image_id: 5,  emotion_id: 1)
+imageEmotion6  = ImageEmotion.create(image_id: 6,  emotion_id: 1)
+imageEmotion7  = ImageEmotion.create(image_id: 7,  emotion_id: 1)
+imageEmotion8  = ImageEmotion.create(image_id: 8,  emotion_id: 1)
+imageEmotion9  = ImageEmotion.create(image_id: 9,  emotion_id: 1)
 imageEmotion10 = ImageEmotion.create(image_id: 10, emotion_id: 1)
 imageEmotion11 = ImageEmotion.create(image_id: 11, emotion_id: 1)
 imageEmotion12 = ImageEmotion.create(image_id: 12, emotion_id: 1)
@@ -118,12 +118,12 @@ imageEmotion45 = ImageEmotion.create(image_id: 45, emotion_id: 2)
 imageEmotion46 = ImageEmotion.create(image_id: 46, emotion_id: 2)
 imageEmotion47 = ImageEmotion.create(image_id: 47, emotion_id: 2)
  
-video1 = Video.create(name: 'Minions Working Out', file: "www.youtube.com/embed/KLMJPKylg2Y")
+video1 = Video.create(name: 'Minions Working Out',                file: "www.youtube.com/embed/KLMJPKylg2Y")
 video2 = Video.create(name: "Saddest Commercial You'll Ever See", file: "www.youtube.com/embed/EEYm2zA7h_k")
-video3 = Video.create(name: 'Just a very Sad Story', file: "www.youtube.com/embed/jXmluLg2XP0")
-video4 = Video.create(name: "Collection of happy videos", file: "www.youtube.com/embed/3jRiRHwL7xM")
-video5 = Video.create(name: "Happy Dogs", file: "www.youtube.com/embed/hGyZ2ETCTVU"
-video6 = Video.create(name: "Brian Williams Rapping", file: "www.youtube.com/embed/-YCeIgt7hMs"
+video3 = Video.create(name: 'Just a very Sad Story',              file: "www.youtube.com/embed/jXmluLg2XP0")
+video4 = Video.create(name: "Collection of happy videos",         file: "www.youtube.com/embed/3jRiRHwL7xM")
+video5 = Video.create(name: "Happy Dogs",                         file: "www.youtube.com/embed/hGyZ2ETCTVU")
+video6 = Video.create(name: "Brian Williams Rapping",             file: "www.youtube.com/embed/-YCeIgt7hMs")
 
 
 videoEmotion1 = VideoEmotion.create(video_id: 1, emotion_id: 1)

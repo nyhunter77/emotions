@@ -20,10 +20,7 @@ class HomeController < ApplicationController
 
   def show   
   	@emotion = Emotion.find(params[:name])  
-    @selected = params[:radio]
-    @images = Image.all
-    @videos = Video.all  
-  	@image_emotions = ImageEmotion.all
+    @selected = params[:radio]  
   end
  
 end

@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
-	before_action :authenticate_user!
-
+	
 	def video_success
 		@name = params[:name]
 		@file = params[:file]

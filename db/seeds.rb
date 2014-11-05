@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Admin.create(email: mario@gmail.com, password: '11111111', password_confirmation: '11111111')
 
 emotion1 = Emotion.create(name: 'happy')
 emotion2 = Emotion.create(name: 'sad')
@@ -127,7 +126,7 @@ video6 = Video.create(name: "Brian Williams Rapping", file: "www.youtube.com/emb
 video7 = Video.create(name: "Happy at the Thrift Shop :)", file: "www.youtube.com/embed/QK8mJJJvaes")
 video8 = Video.create(name: "BBMak Out of My Heart - happy song", file: "www.youtube.com/embed/I6BafxPK5pE?list=FLHgMBFypW4xk6hCTycP-C6g")
 video9 = Video.create(name: "Darth kid", file: "www.youtube.com/embed/R55e-uHQna0?list=FLHgMBFypW4xk6hCTycP-C6g")
-video10 = Video.create(name: "Couple’s song", file: "www.youtube.com/embed/UFbQ3UbkYGo?list=FLHgMBFypW4xk6hCTycP-C6g")
+video10 = Video.create(name: "Couple's song", file: "www.youtube.com/embed/UFbQ3UbkYGo?list=FLHgMBFypW4xk6hCTycP-C6g")
 video11 = Video.create(name: "Final Fantasy 8 happy ending with Aerosmith", file: "www.youtube.com/embed/vOFjLHU9in4?list=FLHgMBFypW4xk6hCTycP-C6g")
 video12 = Video.create(name: "Kenny Chesney - Good Stuff", file: "www.youtube.com/embed/lYQZJ9NUzYU")
 video13 = Video.create(name: "Bullying", file: "www.youtube.com/embed/q4syd4vKFPE")
@@ -140,7 +139,7 @@ video19 = Video.create(name: "Sam and Annie - Life on Mars", file: "www.youtube.
 video20 = Video.create(name: "Ray Lam If The Time Ever Arrives", file: "www.youtube.com/embed/Fawpke7fJDw")
 video21 = Video.create(name: "Father who is blind", file: "www.youtube.com/embed/SV6Sw9CNWek")
 video22 = Video.create(name: "Bruno Mars Talking to the Moon", file: "www.youtube.com/embed/K59Tmrs9YD0")
-video23 = Video.create(name: "Lonestar - I’m Already There", file: "www.youtube.com/embed/1jm5gfuT9Z4")
+video23 = Video.create(name: "Lonestar - I'm Already There", file: "www.youtube.com/embed/1jm5gfuT9Z4")
 video24 = Video.create(name: "lego starwars", file: "www.youtube.com/embed/z0z_TU4Gw5o?list=FLHgMBFypW4xk6hCTycP-C6g")
 video25 = Video.create(name: "Johnny Cash - Hurt", file: "www.youtube.com/embed/3aF9AJm0RFc")
  

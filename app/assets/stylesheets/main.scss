@@ -203,14 +203,28 @@
 /*----------------- video partial page css ------------------*/
   
 	#videoBox {
-	text-align: center;
-	vertical-align: middle;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 2px solid whitesmoke;
+		border-bottom: 2px solid whitesmoke;
+		padding-bottom: 25px;
 	}
 
 	#menuContainer {
 		height:50px;
+		position: relative;
 
-		.menu {
+		#refresh {
+			float: left;
+			display: inline-block;
+		}
+
+		.buttons {
+			position: absolute;
+			right: 75px;
+		}
+
+		#menu {
 			border: 1px solid black;
 			border-radius: 5px;
 			float: right;
@@ -220,6 +234,7 @@
 			display: inline-block;
 			padding: 10px;
 			background-color: lightgray;
+			
 		}
 	}
 
@@ -245,10 +260,14 @@
 	#select_video {
 		width: 300px;
 	}
+
+	.footspace {
+		height: 75px;
+	}
 }
 
-.test {
-}
+
+
  
 
 

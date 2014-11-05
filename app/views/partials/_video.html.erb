@@ -9,11 +9,11 @@
  
 <div id="menuContainer">
 
-	<h3 class="menu"> Menu </h3>
+	<h3 class="buttons" id="menu"> Menu </h3>
 
-	<div class="menu">
+	<div class="buttons" id="menuField">
 		<ul>
-			<li> <%= link_to 'Add a Video', home_video_form_path %> </li>
+			<li> <%= link_to 'Add Your Own Video!', home_video_form_path %> </li>
 		</ul>
 	</div>
 
@@ -23,10 +23,9 @@
 
 <div id="videoBox">
 <h1> Video: <%= name %> </h1>
-<iframe width="1280" height="720" src=http://<%= file %> frameborder="0" allowfullscreen></iframe> <br/>
+<iframe width="1280" height="720" src=http://<%= file %>?rel=0&autoplay=1 frameborder="0" allowfullscreen></iframe> <br/>
 </div>
 
+<div class="footspace"> </div>
 
-<!-- Get if happy or if sad
-get collection of videos that pertains to happy or sad
-output only video from that collection -->
+

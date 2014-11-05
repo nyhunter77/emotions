@@ -148,11 +148,17 @@ body {
   /*----------------- video partial page css ------------------*/
   #videoBox {
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 25px; }
 
   #menuContainer {
     height: 50px;
     position: relative; }
+    #menuContainer #refresh {
+      float: left;
+      display: inline-block; }
     #menuContainer .buttons {
       position: absolute;
       right: 75px; }
@@ -182,8 +188,15 @@ body {
       list-style: none; }
 
   #select_video {
-    width: 300px; } }
+    width: 300px; } 
+  }
+
+  .footspace {
+    height: 75px; } 
+  }
+
 /*-------------------- images partial -----------------------*/
+
 .jp-jplayer {
   z-index: 10;
   margin-bottom: -100px;
@@ -196,4 +209,35 @@ body {
 #slides {
   width: 75%;
   margin: 0 auto;
-  margin-top: 15px; }
+  margin-top: 15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,11 +26,11 @@ div.jp-video {
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
 	color: #666;
-	border:1px solid #009be3;
-	background-color:#eee;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 div.jp-audio {
-	width:420px;
+	width:1064px;
+	margin: 0 auto;
 }
 div.jp-audio-stream {
 	width:182px;

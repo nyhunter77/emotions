@@ -17,14 +17,6 @@
 //= require_tree .
  
 $(document).on('ready page:load', function () {
-	$( "#sign_in_button" ).click(function() { 
-    $( ".sign_in" ).slideToggle();
-    $( ".sign_up" ).hide();
-  });
-  $( "#sign_up_button" ).click(function() { 
-    $( ".sign_up" ).slideToggle();
-    $( ".sign_in" ).hide();
-  }); 
 
 //----------------- video_partial --------------------------//
 

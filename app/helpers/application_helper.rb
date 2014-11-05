@@ -47,6 +47,7 @@ module ApplicationHelper
     return vids
 	end
 
+	
 	def find_music(emotion)
 		music_ids = []
 		musics = []
@@ -61,6 +62,12 @@ module ApplicationHelper
 		end
 
 		return musics
+	end
+
+	def return_url
+		find_music(@emotion.name).each do |music|
+  		music.file
+		end
 	end
 
 end

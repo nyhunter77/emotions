@@ -66,8 +66,10 @@ module ApplicationHelper
 
 	def return_url
 		find_music(@emotion.name).each do |music|
-  		music.file
+  		music = music.file
 		end
+
+		return music
 	end
 
 	def get_color(emotion)

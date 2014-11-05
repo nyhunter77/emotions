@@ -4,7 +4,7 @@
 	<% if @emotion.name %>
 
 	<% content_for :stylesheets do %>
-  		body {background-color: <%= get_color(emotion.name) %> ;}
+  		body {background-color: <%= get_color(@emotion.name) %> ;}
 	<% end %>
 
 		<% if @selected == 'video' %>		

@@ -8,8 +8,7 @@ body {
     color: #333; }
 
   a:hover {
-    text-decoration: none;
-    color: orange; }
+    text-decoration: none; }
 
   #wrapper .sign_in, #wrapper .sign_up {
     width: 200px;
@@ -31,11 +30,9 @@ body {
     #wrapper nav {
       width: 100%;
       height: 30px;
-      background-color: gold;
       font-size: 1em; }
       #wrapper nav .logo {
         width: 100%;
-        background-color: orange;
         display: inline-block;
         padding: 5px;
         margin: 0 auto;
@@ -43,7 +40,6 @@ body {
       #wrapper nav .buttons {
         width: 90%;
         padding: 5px;
-        background-color: lightgreen;
         text-align: center;
         position: absolute;
         z-index: 50;
@@ -100,6 +96,7 @@ body {
       height: 70px;
       background-color: rgba(255, 255, 255, 0.5);
       font-size: 1.5em;
+      float: left;
       margin: 0 auto;
       padding-top: 15px;
       padding-left: 0; }
@@ -188,15 +185,11 @@ body {
       list-style: none; }
 
   #select_video {
-    width: 300px; } 
-  }
+    width: 300px; }
 
   .footspace {
-    height: 75px; } 
-  }
-
+    height: 75px; } }
 /*-------------------- images partial -----------------------*/
-
 .jp-jplayer {
   z-index: 10;
   margin-bottom: -100px;
@@ -209,35 +202,6 @@ body {
 #slides {
   width: 75%;
   margin: 0 auto;
-  margin-top: 15px; 
-}
+  margin-top: 15px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */

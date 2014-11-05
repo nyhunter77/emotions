@@ -1,0 +1,12 @@
+<table>
+	<thead><h1>list of users</h1></thead> 
+	<tbody>
+		<% @users.reverse.each_with_index do |user, index| %> 
+			<tr>
+				<td><%= index + '. '+ user.username %> </td>
+				<td><button>delete</button></td>
+			</tr>
+		<% end %>
+	</tbody>
+
+</table>

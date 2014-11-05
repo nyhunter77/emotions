@@ -1,19 +1,17 @@
 <nav>
+	<div class="logo">  
+			<%= link_to image_tag('logo.png'), root_path %> 
+	</div>  
 	<% if current_user %>
-		<!-- logo, signout -->
-		<div class="logo">
-			<%= link_to "logo", root_path %>
-		</div>
-			<%= link_to "sign out", destroy_user_session_path, method: :delete, class: :button %>
-		</div> 
+		<!-- signout --> 
+			<%= link_to "sign out", destroy_user_session_path, method: :delete, class: :button %> 
 	<% else %>
-		<!-- logo, sign in, sign up -->
-		<div class="logo">
-			<%= link_to "logo", root_path %>
-		</div>
+		<!-- sign in, sign up --> 
 		<div class="buttons"> 
 			<div id="sign_in_button">Sign In</div> |
 			<div id="sign_up_button">Sign Up</div> 
 		</div>
 	<% end %>
 </nav>
+
+<!-- add admin signout -->

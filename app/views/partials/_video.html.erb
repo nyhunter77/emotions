@@ -1,0 +1,32 @@
+<% if @emotion.name %>
+	<% videos = find_videos(@emotion.name) %> 
+  <% video = videos[rand(0..videos.size-1)] %> 
+  <% name = video.name %>
+  <% file = video.file %>  
+<% else %> 
+	<!-- VIDEO NOT FOUND -->
+<% end %>
+ 
+<div id="menuContainer">
+
+	<h3 class="menu"> Menu </h3>
+
+	<div class="menu">
+		<ul>
+			<li> <%= link_to 'Add a Video', home_video_form_path %> </li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="space"> </div>
+
+<div id="videoBox">
+<h1> Video: <%= name %> </h1>
+<iframe width="1280" height="720" src=http://<%= file %> frameborder="0" allowfullscreen></iframe> <br/>
+</div>
+
+
+<!-- Get if happy or if sad
+get collection of videos that pertains to happy or sad
+output only video from that collection -->

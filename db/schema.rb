@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20141105005514) do
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true
   add_index "admins", ["unlock_token"], name: "index_admins_on_unlock_token", unique: true
-
+ 
   create_table "color_emotions", force: true do |t|
     t.integer  "color_id"
     t.integer  "emotion_id"

@@ -1,5 +1,4 @@
-class HomeController < ApplicationController
-	 
+class HomeController < ApplicationController 
 	def video_success
 		@name = params[:name]
 		@file = params[:file]

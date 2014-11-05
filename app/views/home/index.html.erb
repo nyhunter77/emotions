@@ -9,7 +9,7 @@
 				]),{class: :select}) %> 
 	    <br>  
 	    <div class="radio_button"><%= radio_button_tag :radio, :video %></div> Video | 
-	    <div class="radio_button"><%= radio_button_tag :radio, :music %></div> Music  
+	    <div class="radio_button"><%= radio_button_tag :radio, :music, checked = true %></div> Music  
 	    <br>
 			<%= submit_tag 'Hit It!', class: :button %>
 		<% end %>

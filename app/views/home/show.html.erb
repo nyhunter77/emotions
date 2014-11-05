@@ -2,7 +2,12 @@
 
 <div class="render_page">
 	<% if @emotion.name %>
-		<% if @selected == 'video' %>
+
+	<% content_for :stylesheets do %>
+  		body {background-color: <%= get_color(emotion.name) %> ;}
+	<% end %>
+
+		<% if @selected == 'video' %>		
 			<%= render '/partials/video' %>
 		<% else @selected == 'music' %>
 			<%= render '/partials/images' %>
@@ -11,3 +16,8 @@
 		<!-- PAGE NOT FOUND -->
 	<% end %>
 </div> 
+
+
+
+
+

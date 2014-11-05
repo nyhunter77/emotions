@@ -203,13 +203,21 @@
 /*----------------- video partial page css ------------------*/
   
 	#videoBox {
-	text-align: center;
-	vertical-align: middle;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 2px solid whitesmoke;
+		border-bottom: 2px solid whitesmoke;
+		padding-bottom: 25px;
 	}
 
 	#menuContainer {
 		height:50px;
 		position: relative;
+
+		#refresh {
+			float: left;
+			display: inline-block;
+		}
 
 		.buttons {
 			position: absolute;

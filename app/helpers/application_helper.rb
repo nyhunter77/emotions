@@ -47,6 +47,7 @@ module ApplicationHelper
     return vids
 	end
 
+	
 	def find_music(emotion)
 		music_ids = []
 		musics = []
@@ -61,7 +62,20 @@ module ApplicationHelper
 		end
 
 		return musics
-	end 
+	end
+
+	def return_url
+		find_music(@emotion.name).each do |music|
+  		music = music.file
+		end
+
+		return music
+	end
+
+	def get_color(emotion)
+		findColors = find_colors(emotion)
+		findColors[rand(0..findColors.size-1)]
+	end
 
 	def find_colors(emotion)
 		colors_ids = []
@@ -83,7 +97,6 @@ module ApplicationHelper
 		findColors = find_colors(emotion)
 		findColors[rand(0..findColors.size-1)]
 	end
-
 
 end
 

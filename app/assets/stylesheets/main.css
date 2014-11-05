@@ -98,7 +98,6 @@ body {
       font-size: 1.5em;
       float: left;
       margin: 0 auto;
-      padding-top: 15px;
       padding-left: 0; }
       #wrapper nav .logo {
         width: 12%;
@@ -106,17 +105,19 @@ body {
         display: inline-block;
         padding: 5px; }
       #wrapper nav .buttons {
-        width: 20%;
+        width: 30%;
         padding: 5px;
         background-color: rgba(255, 255, 255, 0.5);
         float: right;
         text-align: center;
         position: relative;
         top: 0px; }
-        #wrapper nav .buttons div {
-          display: inline-block;
-          padding-left: 10px;
-          padding-right: 10px; }
+        #wrapper nav .buttons .dropdown-menu {
+          margin-right: 10px;
+          padding-top: 10px; }
+          #wrapper nav .buttons .dropdown-menu .forgot_password {
+            padding-left: 10px;
+            padding-top: 0; }
 
   .home_index {
     width: 100%;
@@ -131,13 +132,17 @@ body {
       font-size: 3em; }
       .home_index .form .select {
         width: 30%;
-        padding: 10px; }
+        padding: 10px;
+        color: #9D9DA1;
+        font-weight: 200; }
       .home_index .form .radio_button {
         transform: scale(2);
         display: inline-block;
         text-align: left;
         position: relative;
         top: -12px; }
+        .home_index .form .radio_button .radio_btn_opt {
+          font-size: 1em; }
       .home_index .form .button {
         margin: 10px;
         width: 20%; }

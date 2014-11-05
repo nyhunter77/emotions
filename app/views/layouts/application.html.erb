@@ -6,8 +6,10 @@
   <style><%= yield :stylesheets %></style>
   <link type="text/css" href="/assets/jplayer.blue.monday.css" rel="stylesheet" /> 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="/assets/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="/assets/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="/assets/add-on/jquery.jplayer.inspector.js"></script>
+  <script type="text/javascript" src="/assets/bootstrap_js/bootstrap.min.js"></script>
   <script src="/assets/jquery.slides.js"></script>
 
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
@@ -21,15 +23,10 @@
 
 </head>
 <body>
-  <div id="wrapper"> 
-    <header> 
-      <%= render '/shared/nav' %>
-      <div class="sign_in">
-        <%= render '/users/sessions/new' %>
-      </div>
-      <div class="sign_up">
-        <%= render '/users/registrations/new' %>
-      </div> 
+
+  <div id="wrapper">
+    <header>
+      <%= render '/users/shared/nav' %>
     </header> 
   
 
@@ -38,5 +35,6 @@
 
     <%= yield %>
   </div>
+
 </body>
 </html>

@@ -3,13 +3,14 @@
 
 		<% content_for :stylesheets do %>
 	  	.render_page {background-color: <%= get_color(@emotion.name).hexcode %>; }
-		<% end %>   
+		<% end %>    
 
 		<% if @selected == 'video' %>		
 			<%= render '/partials/video' %>
 		<% else @selected == 'music' %>
 			<%= render '/partials/images' %>
 		<% end %> 
+
 	<% else %>
 		<!-- PAGE NOT FOUND -->
 	<% end %>

@@ -8,10 +8,28 @@
 	<% else %>
 		<!-- sign in, sign up --> 
 		<div class="buttons"> 
-			<div id="sign_in_button">Sign In</div> |
-			<div id="sign_up_button">Sign Up</div> 
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+			    Sign In
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+			    <%= render 'users/sessions/new' %>
+			  </ul>
+			</div> |
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+			    Sign Up
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+			    <%= render '/users/registrations/new' %>
+			  </ul>
+			</div>
 		</div>
 	<% end %>
 </nav>
+
+
 
 <!-- add admin signout -->

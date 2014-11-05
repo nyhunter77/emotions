@@ -9,6 +9,48 @@
 emotion1 = Emotion.create(name: 'happy')
 emotion2 = Emotion.create(name: 'sad')
 
+
+# Happy Colors #
+color1 = Color.create(name: 'red', hexcode: '#FF1919')
+color2 = Color.create(name: 'flaming orange', hexcode: '#FF3300')
+color3 = Color.create(name: 'beach sand yellow', hexcode: '#FFFF99')
+color4 = Color.create(name: 'neon green', hexcode: '#4DFF4D')
+color5 = Color.create(name: 'bright blue', hexcode: '#33FFFF')
+color6 = Color.create(name: 'hot pink', hexcode: '#FF59D6')
+
+# Happy ColorEmotions #
+colorEmotion1 = ColorEmotion.create(emotion_id: 1, color_id: 1)
+colorEmotion2 = ColorEmotion.create(emotion_id: 1, color_id: 2)
+colorEmotion3 = ColorEmotion.create(emotion_id: 1, color_id: 3)
+colorEmotion4 = ColorEmotion.create(emotion_id: 1, color_id: 4)
+colorEmotion5 = ColorEmotion.create(emotion_id: 1, color_id: 5)
+colorEmotion6 = ColorEmotion.create(emotion_id: 1, color_id: 6)
+colorEmotion7 = ColorEmotion.create(emotion_id: 1, color_id: 7)
+
+# Sad Colors #
+color7 = Color.create(name: 'brick red', hexcode: '#800000')
+color8 = Color.create(name: 'dark rust', hexcode: '#401A00')
+color9 = Color.create(name: 'foggy day', hexcode: '#D9D996')
+color10 = Color.create(name: 'swampy green', hexcode: '#004C00')
+color11 = Color.create(name: 'night blue', hexcode: '#24248F')
+color12 = Color.create(name: 'grandma purple', hexcode: '#694D94')
+
+# Sad ColorEmotions #
+colorEmotion8 = ColorEmotion.create(emotion_id: 1, color_id: 8)
+colorEmotion9 = ColorEmotion.create(emotion_id: 1, color_id: 9)
+colorEmotion10 = ColorEmotion.create(emotion_id: 1, color_id: 10)
+colorEmotion11 = ColorEmotion.create(emotion_id: 1, color_id: 11)
+colorEmotion12 = ColorEmotion.create(emotion_id: 1, color_id: 12)
+colorEmotion13 = ColorEmotion.create(emotion_id: 1, color_id: 13)
+colorEmotion14 = ColorEmotion.create(emotion_id: 1, color_id: 14)
+
+
+
+
+
+
+
+
 # Happy Images #
 
 image1  = Image.create(name: 'are-you-happy', 		file: "https://s3.amazonaws.com/emotionsproject/happy/are-you-happy.jpg")

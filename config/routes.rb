@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :admins 
   devise_for :users
- 
+
+  # devise_scope :admin do
+  #   get "sign_in", to: "admins/sessions#new"
+  # end
+  
   get 'home/show'
   post 'home/show'
 

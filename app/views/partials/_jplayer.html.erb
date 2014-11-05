@@ -1,4 +1,19 @@
-<!-- <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+        $(this).jPlayer("setMedia", {
+          title: "Moon",
+          mp3: "http://nycda.zone/guie851/Music/moon.m4a"
+        });
+      },
+      swfPath: "/js",
+      supplied: "m4a, oga"
+    });
+  });
+</script> 
+
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
   <div id="jp_container_1" class="jp-audio">
     <div class="jp-type-single">
       <div class="jp-gui jp-interface">
@@ -37,25 +52,7 @@
         To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
       </div>
     </div>
-  </div> -->
-
-  <div id="cp_widget_36e12c85-7821-486f-86e3-91c7509d69ad">...</div>
-  <script type="text/javascript">
-    var cpo = []; cpo["_object"] ="cp_widget_36e12c85-7821-486f-86e3-91c7509d69ad"; cpo["_fid"] = "AIJAMGcxosM3";
-    var _cpmp = _cpmp || []; _cpmp.push(cpo);
-    (function() { 
-      var cp = document.createElement("script"); cp.type = "text/javascript";
-      cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-      var c = document.getElementsByTagName("script")[0];
-      c.parentNode.insertBefore(cp, c); 
-    })(); 
-  </script>
-
-  <noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.
-    <% find_music('happy').each do |music| %>
-      <span><%= music.name %></span>
-    <% end %>
-  </noscript>
+  </div>
 
 
 

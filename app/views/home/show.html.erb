@@ -1,12 +1,8 @@
-<h1> The feeling is <%= @emotion.name %>. </h1>
-
 <div class="render_page">
-	<% if @emotion.name %>
-
-	<% content_for :stylesheets do %>
-  		body {background-color: <%= get_color(emotion.name) %> ;}
-	<% end %>
-
+	<% if @emotion.name %> 
+		<% content_for :stylesheets do %>
+	  	.render_page {background-color: <%= get_color(@emotion.name).hexcode %>; }
+		<% end %> 
 		<% if @selected == 'video' %>		
 			<%= render '/partials/video' %>
 		<% else @selected == 'music' %>

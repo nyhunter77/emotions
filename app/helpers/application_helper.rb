@@ -61,12 +61,7 @@ module ApplicationHelper
 		end
 
 		return musics
-	end
-
-	def get_color(emotion)
-		findColors = find_colors(emotion)
-		findColors[rand(0..findColors.size-1)]
-	end
+	end 
 
 	def find_colors(emotion)
 		colors_ids = []
@@ -82,6 +77,11 @@ module ApplicationHelper
     end
 
     return cols
+	end
+
+	def get_color(emotion)
+		findColors = find_colors(emotion)
+		findColors[rand(0..findColors.size-1)]
 	end
 
 

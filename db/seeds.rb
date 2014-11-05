@@ -115,7 +115,6 @@ imageEmotion44 = ImageEmotion.create(image_id: 44, emotion_id: 2)
 imageEmotion45 = ImageEmotion.create(image_id: 45, emotion_id: 2)
 imageEmotion46 = ImageEmotion.create(image_id: 46, emotion_id: 2)
 imageEmotion47 = ImageEmotion.create(image_id: 47, emotion_id: 2)
-<<<<<<< HEAD
 
 # Happy Music #
 

@@ -18,6 +18,7 @@
  
 $(document).on('ready page:load', function () {
 
+
 //----------------- video_partial --------------------------//
 
 
@@ -32,5 +33,9 @@ $(document).on('ready page:load', function () {
 		$('#menuField').fadeOut(500);
 		$('#menu').fadeIn(500);
 	});
+
+//-----------------random colors ------------------------//
+ 
+	$('.render_page').animate({backgroundColor: '<%= Color.find(3) %>'}, 8000);
 
 });

@@ -93,6 +93,11 @@ module ApplicationHelper
     return cols
 	end
 
+	def get_color(emotion)
+		findColors = find_colors(emotion)
+		findColors[rand(0..findColors.size-1)]
+	end
+
 end
 
 

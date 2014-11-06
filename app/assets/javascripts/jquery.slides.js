@@ -7,7 +7,8 @@
     defaults = {
       width: 940,
       height: 528,
-      start: 1,
+
+      start: Math.floor(Math.random() * 20) +1 ,   
       navigation: {
         active: true,
         effect: "fade"

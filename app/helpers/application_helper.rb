@@ -70,8 +70,13 @@ module ApplicationHelper
 		end
 
 		return music
-	end 
-	
+	end
+
+	def get_color(emotion)
+		findColors = find_colors(emotion)
+		findColors[rand(0..findColors.size-1)]
+	end
+
 	def find_colors(emotion)
 		colors_ids = []
   	cols = []
@@ -80,10 +85,10 @@ module ApplicationHelper
       colors_ids << ce.color_id
     end
 
-    # colors_ids.each do |id|
-    #   col = Color.find(id)
-    # 	cols << col
-    # end
+    colors_ids.each do |id|
+      col = Color.find(id)
+    	cols << col
+    end
 
     return cols
 	end

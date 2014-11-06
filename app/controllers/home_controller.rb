@@ -1,13 +1,4 @@
 class HomeController < ApplicationController 
-
-  def happy_video
-
-  end
-
-  def sad_video
-
-  end
-
 	def video_success
 		@name = params[:name]
 		@file = params[:file]
@@ -26,43 +17,10 @@ class HomeController < ApplicationController
   	@emotions = Emotion.all
   end 
 
-  def show  
-  	@emotion = Emotion.find_by_name(params[:name])  
+  def show 
+  	@emotion = Emotion.find(params[:name])  
     @selected = params[:radio]  
-    redirect_to home_sad_video_path 
   end
-
-  def happy_music
-  	@colors = find_colors('happy')
-    @hexcodes = hexcodes(@colors)
-    @music_collection = find_music(@emotion.name)
-    @music_file = music_file(@music_collection)
-    @music_name = music_name(@music_collection)
-    @images = find_images(@emotion.name) 
-    @images_name = images_name(@images) 
-  end
-
-  def sad_music
-  	@colors = find_colors('sad')
-    @hexcodes = hexcodes(@colors)
-    @music_collection = find_music(@emotion.name)
-    @music_file = music_file(@music_collection)
-    @music_name = music_name(@music_collection)
-    @images = find_images(@emotion.name) 
-    @images_name = images_name(@images) 
-  end
-
-  def happy
-  end
-
-
-  private
-
-  def emotion_params
-    params.require(:emotion).permit(:name)
-
-  end
-
  
 end
 

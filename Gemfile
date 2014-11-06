@@ -6,7 +6,6 @@ group :development, :test do
 	gem 'quiet_assets' 
 end
 
-gem 'soundmanager-rails'
 gem 'devise'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

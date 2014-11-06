@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #   get "sign_in", to: "admins/sessions#new"
   # end
   
+
   get '/show' => 'home#show'
 
   get 'home/happy_music'

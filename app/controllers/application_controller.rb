@@ -34,6 +34,15 @@ class ApplicationController < ActionController::Base
     return imgs
 	end
 
+	def images_name(music_collection)
+		array = []
+		music_collection.each do |image|
+  		array << image.name
+		end
+
+		return array.join(',') 
+	end 
+
 	def find_videos(emotion)
 		vid_ids = []
   	vids = []
@@ -65,14 +74,24 @@ class ApplicationController < ActionController::Base
 		end
 
 		return musics
-	end
+	end 
 
-	def return_url
-		find_music(@emotion.name).each do |music|
-  		music = music.file
+	def music_file(music_collection)
+		array = []
+		music_collection.each do |music|
+  		array << music.file.split('/')[-1]
 		end
 
-		return music
+		return array.join(',') 
+	end 
+
+	def music_name(music_collection)
+		array = []
+		music_collection.each do |music|
+  		array << music.name
+		end
+
+		return array.join(',') 
 	end 
 	
 	def find_colors(emotion)

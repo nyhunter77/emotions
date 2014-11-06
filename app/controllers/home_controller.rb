@@ -20,7 +20,7 @@ class HomeController < ApplicationController
   def show 
   	@emotion = Emotion.find_by_name(params[:name])  
     @selected = params[:radio]  
-    redirect_to @emotion.name_@selected_path 
+    redirect_to home_happy_music_path 
   end
 
   def happy

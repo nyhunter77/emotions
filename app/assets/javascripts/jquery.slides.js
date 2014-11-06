@@ -84,7 +84,7 @@
         top: 0,
         left: 0,
         width: "100%",
-        zIndex: 0,
+        zIndex: 20,
         display: "none",
         webkitBackfaceVisibility: "hidden"
       });

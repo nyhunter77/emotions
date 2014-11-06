@@ -36,5 +36,8 @@
     <%= yield %>
   </div>
 
+<%= link_to 'Admin Registration', new_admin_registration_path %> |
+<%= link_to 'Admin Sign Out', destroy_admin_session_path, method: :delete %> |
+<%= link_to 'Admin Sign In', new_admin_session_path %>
 </body>
 </html>

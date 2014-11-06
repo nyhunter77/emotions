@@ -1,74 +1,46 @@
 <script>
-  $(document).ready(function(){
+  // $(document).ready(function(){
 
-  var myPlaylist = new jPlayerPlaylist({
-    jPlayer: "#jquery_jplayer_N",
-    cssSelectorAncestor: "#jp_container_N"
-  }, [
-    {
-      title:"Happy",
-      artist:"Pharrell Williams",
-      mp3:"https://s3.amazonaws.com/emotionsproject/happy+songs/Happy.mp3"
-    }
-  ], {
-    playlistOptions: {
-      enableRemoveControls: true
-    },
-    swfPath: "js",
-    supplied: "webmv, ogv, m4v, oga, mp3",
-    smoothPlayBar: true,
-    keyEnabled: true,
-    audioFullScreen: true
-  });
+  // var myPlaylist = new jPlayerPlaylist({
+  //       jPlayer: "#jp_player",
+  //       cssSelectorAncestor: "#jp_container"
+  //   }, [
+  //       {
+  //           title:"Happy by Pharrell Williams",
+  //           mp3:"https://s3.amazonaws.com/emotionsproject/happy+songs/Happy.mp3"
+  //       },    
+  //       {
+  //           title:"The Man by Aloe Blacc",
+  //           mp3:"https://s3.amazonaws.com/emotionsproject/happy+songs/The+Man.mp3"
+  //       }
+  //   ], {
+  //       playlistOptions: {
+  //           loopOnPrevious: true
+  //       },
+  //       loop: true,
+  //       swfPath: "/assets",
+  //       supplied: "mp3"
+  //   });
 
   // Click handlers for jPlayerPlaylist method demo
 
   // Audio mix playlist
 
-  $("#playlist-setPlaylist-audio-mix").click(function() {
-    myPlaylist.setPlaylist([
-      {
-        title:"Happy",
-        artist:"Pharrell Williams",
-        mp3:"https://s3.amazonaws.com/emotionsproject/happy+songs/Happy.mp3"
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+        $(this).jPlayer("setMedia", {
+          title: "Bubble",
+          m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+          oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+        });
       },
-      {
-        title:"Your Face",
-        artist:"The Stark Palace",
-        mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
-        oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
-        poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
-      },
-      {
-        title:"Hidden",
-        artist:"Miaow",
-        free: true,
-        mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
-        oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg",
-        poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
-      },
-      {
-        title:"Cyber Sonnet",
-        artist:"The Stark Palace",
-        mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
-        oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg",
-        poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
-      },
-      {
-        title:"Tempered Song",
-        artist:"Miaow",
-        mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
-        oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg",
-        poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
-      },
-      {
-        title:"Lentement",
-        artist:"Miaow",
-        mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
-        oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg",
-        poster: "http://www.jplayer.org/audio/poster/Miaow_640x360.png"
-      }
-    ]);
+      swfPath: "/assets/javascripts",
+      supplied: "m4a, oga"
+    });
   });
 </script>
 

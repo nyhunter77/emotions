@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   #   get "sign_in", to: "admins/sessions#new"
   # end
   
-  get 'home/show'
-  post 'home/show'
+  get '/show' => 'home#show'
+  get '/show/:name', to: 'home#show'
+  post '/show/:name', to: 'home#show'
 
   get 'home/video_form'
   #post 'home/video_form'

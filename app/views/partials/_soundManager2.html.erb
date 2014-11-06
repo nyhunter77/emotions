@@ -194,9 +194,9 @@ puts <%= (@music.file).split('/')[-1] %>
                         $('#plUL li:eq(' + id + ')').addClass('plSel');
                         npTitle.text(tracks[id].name);
                         index = id;
-                        audio.src = mediaPath + '<%= @emotion.name %>' +"+songs/" + tracks[id].file;
+                        audio.src = mediaPath + <%= @emotion.name.to_json %> +"+songs/" + tracks[id].file;
                         console.log ('********************');
-                        console.log (<%=@emotion.name%>);
+                        console.log (<%=@emotion.name.to_json%>);
                         console.log ('*********************');
                     },                            // @emotion  "sad+songs/"
                     playTrack = function(id) {

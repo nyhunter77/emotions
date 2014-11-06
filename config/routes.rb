@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get 'home/show'
   post 'home/show'
 
+  get 'happy/music'
+  get 'happy/video'
+  get 'sad/music'
+  get 'sad/video'
+
   get 'home/video_form'
   #post 'home/video_form'
   get 'home/video_success'

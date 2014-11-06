@@ -406,7 +406,7 @@ video41 = Video.create(name: "Henri - Politique", file: "www.youtube.com/embed/C
 video42 = Video.create(name: "Katy Perry - The One That Got Away", file: "www.youtube.com/embed/Ahha3Cqe_fk")
 video43 = Video.create(name: "Katy Perry - Thinking Of You", file: "www.youtube.com/embed/wdGZBRAwW74")
 video44 = Video.create(name: "Quicksand | Robot Chicken | Adult Swim", file: "www.youtube.com/embed/G_Z3lmidmrY")
-video45 = Video.create(name: "For The Birds", file: "http://youtu.be/MOiyD26cJ2A")
+video45 = Video.create(name: "For The Birds", file: "www.youtube.com/watch?v=MOiyD26cJ2A")
 video46 = Video.create(name: "Ormie the Pig", file: "www.youtube.com/embed/EUm-vAOmV1o")
 video47 = Video.create(name: "Funny kitten can't jump", file: "www.youtube.com/embed/fBA_lxUiwSg")
 video48 = Video.create(name: "How To Pick Up Girls", file: "www.youtube.com/embed/m7x57zvZLvI")

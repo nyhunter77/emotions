@@ -18,32 +18,16 @@ class HomeController < ApplicationController
   end 
 
   def show  
-  	@emotion = Emotion.find_by_name(params[:name])  
-    @selected = params[:radio]  
-    redirect_to home_happy_music_path 
-  end
-
-  def happy
-  	@colors = find_colors('happy')
-    @hexcodes = hexcodes(@colors)
-  end
-
-  def sad
-  	@colors = find_colors('sad') 
+  	@emotion = Emotion.find(params[:name])  
+    @selected = params[:radio] 
+    @colors = find_colors(@emotion.name) 
     @hexcodes = hexcodes(@colors)
     @music_collection = find_music(@emotion.name)
     @music_file = music_file(@music_collection)
     @music_name = music_name(@music_collection)
     @images = find_images(@emotion.name) 
-    @images_name = images_name(@images) 
+    @images_name = images_name(@images)   
   end
-
-  def happy
-  end
-
-  def sad 
-  end
-
  
 end
 

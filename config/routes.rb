@@ -4,14 +4,9 @@ Rails.application.routes.draw do
   # devise_scope :admin do
   #   get "sign_in", to: "admins/sessions#new"
   # end
-  
-
-  get '/show' => 'home#show'
-
-  get 'home/happy_music'
-  get 'home/happy_video'
-  get 'home/sad_music'
-  get 'home/sad_video'
+   
+  get 'home/show' 
+  post 'home/show' 
 
   get 'home/video_form'
   #post 'home/video_form'

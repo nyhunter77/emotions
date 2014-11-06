@@ -23,12 +23,12 @@ class HomeController < ApplicationController
     redirect_to home_happy_music_path 
   end
 
-  def happy
+  def happy_music
   	@colors = find_colors('happy')
     @hexcodes = hexcodes(@colors)
   end
 
-  def sad
+  def sad_music
   	@colors = find_colors('sad')
     @hexcodes = hexcodes(@colors)
   end

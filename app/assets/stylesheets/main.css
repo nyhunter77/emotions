@@ -244,7 +244,12 @@ body {
   color: #9D9DA1; }
 
 .default-wrapper {
-  margin-top: 30px; }
+  margin-top: 30px;
+  width: 1050px;
+  margin: 0 auto; }
+  .default-wrapper .slides {
+    width: 100%;
+    margin-top: 30px; }
 
 .gallery-wrapper {
   width: 1080px;
@@ -297,17 +302,4 @@ body {
 #audio1 {
   width: 500px; }
 
-/*.sm2-bar-ui {
- font-size: 16px;
-}
-.sm2-bar-ui .sm2-main-controls,
-.sm2-bar-ui .sm2-playlist-drawer {
- background-color: #2288cc;  non-RGBA fallback 
- background-color: rgba(34, 136, 204, 0.88);
-}
-.sm2-bar-ui .sm2-inline-texture {
- background: transparent;
-}*/
-
 /*# sourceMappingURL=main.css.map */
-

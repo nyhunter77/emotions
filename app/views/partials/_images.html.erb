@@ -1,9 +1,15 @@
 <script>
   $(document).ready(function(){
+
+    var images = '<%= @images_name %>';
+    images = images.split(',');
+    console.log(images);
+
+
     $(function(){
       $("#slides").slidesjs({
-        maxWidth: 1000,
-        maxHeight: 625
+        width: 940,
+        height: 528
       });
     });
   });

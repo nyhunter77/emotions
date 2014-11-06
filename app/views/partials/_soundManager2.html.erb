@@ -106,20 +106,26 @@
 <div class="footspace"></div>
 
         <script type="text/javascript">
+
+          var music_files = '<%= @music_file %>';
+          music_files = music_files.split(','); 
+
+          // var music_names = '<%= @music_name %>';
+          // music_names = music_names.split(',');
+          // console.log(music_names);
+
+          tracks = [];
+          for (var i = music_files.length - 1; i >= 0; i--) {
+            tracks.push({"track":i, "file":music_files[i]});
+          }
+ 
             jQuery(function($) {
                 var supportsAudio = !!document.createElement('audio').canPlayType;
                 if(supportsAudio) {
                     var index = 0,
                     playing = false;
-                    mediaPath = src='https://s3.amazonaws.com/emotionsproject/happy+songs/',
-                    extension = '',
-                    tracks = [
-                        {"track":1,"name":"Wedding March","file":"01+Don%27t+Worry%2C+Be+Happy"},
-                        {"track":2,"name":"Wedding March Variation 1","file":"Happy+Days+(Theme+from+Happy+Days)"},
-                        {"track":3,"name":"Happy Birthday Variation: In the style of Tango","file":"Wake+Me+Up+Before+You+Go-Go"},
-                        {"track":4,"name":"Wedding March Variation 2","file":"Walking+On+Sunshine"},
-                        {"track":5,"name":"Random Classical","file":"And+We+Danced+(feat.+Ziggy+Stardust)"}
-                    ],
+                    mediaPath = src='https://s3.amazonaws.com/emotionsproject/<%= @emotion.name%>+songs/', 
+                    tracks,
                     trackCount = tracks.length,
                     npAction = $('#npAction'),
                     npTitle = $('#npTitle'),
@@ -178,18 +184,12 @@
                         $('#plUL li:eq(' + id + ')').addClass('plSel');
                         npTitle.text(tracks[id].name);
                         index = id;
-                        audio.src = mediaPath + tracks[id].file + extension;
+                        audio.src = mediaPath + tracks[id].file;
                     },
                     playTrack = function(id) {
                         loadTrack(id);
                         audio.play();
-                    };
-                    if(audio.canPlayType('audio/ogg')) {
-                        extension = '.ogg';
-                    }
-                    if(audio.canPlayType('audio/mpeg')) {
-                        extension = '.mp3';
-                    }
+                    }; 
                     loadTrack(index);
                 }
                 });

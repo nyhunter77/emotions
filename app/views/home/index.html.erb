@@ -5,7 +5,7 @@
 	<h1>I want to feel... </h1>
 	 
 	<div class="form">
-		<%= form_tag('', method: :post) do %> 
+		<%= form_tag(show_path, method: :post) do %> 
 			<%= select_tag(:name, options_for_select(
 				[['happy', emotion_id("happy")],
 				 ['sad',   emotion_id("sad")  ]

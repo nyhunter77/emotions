@@ -341,6 +341,12 @@ body{
 
 .default-wrapper{
 	margin-top: 30px;
+	width: 1050px;
+	margin: 0 auto;
+	.slides{
+		width: 100%;
+		margin-top: 30px;
+	}
 }
 
 .gallery-wrapper{

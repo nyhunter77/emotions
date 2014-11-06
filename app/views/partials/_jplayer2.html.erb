@@ -25,7 +25,10 @@
         
         // Assigns the files for each format, once the player is loaded.
         ready: function() {jQuery(this).jPlayer("setMedia", {
-            mp3: 'https://s3.amazonaws.com/emotionsproject/happy+songs/Happy.mp3',
+            mp3: 'http://nycda.zone/guie851/Music/Hacken.mp3',
+            // m4a: 'http://nycda.zone/guie851/Music/moon.m4a',
+            // m4a: 'http://nycda.zone/guie851/Music/subsong.m4a',
+            // mp3: 'https://s3.amazonaws.com/emotionsproject/happy+songs/Happy.mp3',
         });}
         
     });
@@ -38,6 +41,10 @@
     $('#stopButton').click(function() {
         $('#mediaContainer').jPlayer('stop');
     });
+    $('#nextButton').click(function() {
+        $("#mediaContainer").jPlayer('next');
+    })
+
 });
 </script> 
 

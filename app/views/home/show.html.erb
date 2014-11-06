@@ -1,9 +1,9 @@
 <div class="render_page">  
 	<% if @emotion.name %> 
 
-		<% content_for :stylesheets do %>
-	  	.render_page {background-color: <%= get_color(@emotion.name).hexcode %>; }
-		<% end %>    
+		<!--  content_for :stylesheets do
+	  	.render_page {background-color:  get_color(@emotion.name).hexcode ; }
+		 end   -->   
 
 		<% if @selected == 'video' %>		
 			<%= render '/partials/video' %>
@@ -18,7 +18,7 @@
 
 <script type="text/javascript"> 
  
-	$('.render_page').animate({backgroundColor: '<%= get_color(@emotion.name).hexcode %>' }, 8000);
+	// $('.render_page').animate({backgroundColor: 'get_color(@emotion.name).hexcode ' }, 8000);
  
 </script>
 

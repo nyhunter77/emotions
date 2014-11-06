@@ -1,11 +1,9 @@
-<% if @emotion.name %>
-	<% videos = find_videos(@emotion.name) %> 
+
+	<% videos = find_videos('happy') %> 
   <% video = videos[rand(0..videos.size-1)] %> 
   <% name = video.name %>
   <% file = video.file %>  
-<% else %> 
-	<!-- VIDEO NOT FOUND -->
-<% end %>
+
  
 <div id="menuContainer">
 

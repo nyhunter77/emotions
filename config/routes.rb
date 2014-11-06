@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
 
   get '/show' => 'home#show'
+  post '/show' => 'home#show'
 
   get 'home/happy_music'
   get 'home/happy_video'

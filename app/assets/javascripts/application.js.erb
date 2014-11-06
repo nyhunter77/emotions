@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require soundmanager
 //= require 'jquery.jplayer'
 //= require_tree .
  
@@ -33,9 +34,8 @@ $(document).on('ready page:load', function () {
 		$('#menuField').fadeOut(500);
 		$('#menu').fadeIn(500);
 	});
-
-//-----------------random colors ------------------------//
  
-	$('.render_page').animate({backgroundColor: '<%= Color.find(3) %>'}, 8000);
+	
+	
 
 });

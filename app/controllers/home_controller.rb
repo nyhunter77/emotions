@@ -19,7 +19,9 @@ class HomeController < ApplicationController
 
   def show 
   	@emotion = Emotion.find_by_name(params[:name])  
-    @selected = params[:radio]  
+    @selected = params[:radio]   
+    @colors = find_colors(@emotion.name)
+    @hexcodes = hexcodes(@colors)
   end
 
   def happy

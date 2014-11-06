@@ -1,4 +1,16 @@
 
+<% @music = Music.find(1) %>
+puts <%= (@music.name) %>
+puts <%= (@music.id) %>
+puts <%= (@music.file).split('/')[-1] %>
+
+<%= javascript_tag do %>
+  musicname = <%= (@music.name).to_json %>;
+  musicid = <%= (@music.id).to_json %>;
+  musicfile = <%= ((@music.file).split('/')[-1]).to_json %>;
+<% end %>
+
+
   <div id="cwrap">
     <div id="nowPlay">
         <h3 id="npAction">Paused:</h3>
@@ -111,15 +123,19 @@
                 if(supportsAudio) {
                     var index = 0,
                     playing = false;
-                    mediaPath = src='https://s3.amazonaws.com/emotionsproject/happy+songs/',
+                    mediaPath = src='https://s3.amazonaws.com/emotionsproject/',
                     extension = '',
-                    tracks = [
-                        {"track":1,"name":"Wedding March","file":"01+Don%27t+Worry%2C+Be+Happy"},
-                        {"track":2,"name":"Wedding March Variation 1","file":"Happy+Days+(Theme+from+Happy+Days)"},
-                        {"track":3,"name":"Happy Birthday Variation: In the style of Tango","file":"Wake+Me+Up+Before+You+Go-Go"},
-                        {"track":4,"name":"Wedding March Variation 2","file":"Walking+On+Sunshine"},
-                        {"track":5,"name":"Random Classical","file":"And+We+Danced+(feat.+Ziggy+Stardust)"}
+                    tracks = [           //  @music.name          // (@music.file).split('/')[-1]
+                        {"track":1,"name":"@music.name","file":"01+Don%27t+Worry%2C+Be+Happy.mp3"},
+                        {"track":2,"name":"Wedding March Variation 1","file":"Happy+Days+(Theme+from+Happy+Days).mp3"},
+                        {"track":3,"name":"Happy Birthday Variation: In the style of Tango","file":"Wake+Me+Up+Before+You+Go-Go.mp3"},
+                        {"track":4,"name":"Wedding March Variation 2","file":"Walking+On+Sunshine.mp3"},
+                        {"track":5,"name":"Random Classical","file":"And+We+Danced+(feat.+Ziggy+Stardust).mp3"}
                     ],
+                    // in ruby, build tracks as an array  
+                    // if @emotion.name = happy 
+                    // tracks = []
+                    // tracks <<  
                     trackCount = tracks.length,
                     npAction = $('#npAction'),
                     npTitle = $('#npTitle'),
@@ -178,8 +194,11 @@
                         $('#plUL li:eq(' + id + ')').addClass('plSel');
                         npTitle.text(tracks[id].name);
                         index = id;
-                        audio.src = mediaPath + tracks[id].file + extension;
-                    },
+                        audio.src = mediaPath + '<%= @emotion.name %>' +"+songs/" + tracks[id].file;
+                        console.log ('********************');
+                        console.log (<%=@emotion.name%>);
+                        console.log ('*********************');
+                    },                            // @emotion  "sad+songs/"
                     playTrack = function(id) {
                         loadTrack(id);
                         audio.play();

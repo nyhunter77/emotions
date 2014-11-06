@@ -64,6 +64,14 @@ module ApplicationHelper
 		return musics
 	end
 
+	def return_name
+		find_music(@emotion.name).each do |musicname|
+			musicname = musicname.name
+		end
+
+		return musicname
+	end
+
 	def return_url
 		find_music(@emotion.name).each do |music|
   		music = music.file

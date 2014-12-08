@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The code here contains the starter code I did before starting a project with a team of 2 others for what would become Animote.
 
-Things you may want to cover:
+I worked on this for the weekend before we started to gain a better understanding of what we would be building.
 
-* Ruby version
+My teammates liked what I built and we continued on from this framework until a later github push seemed to become corrupt.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+We have since restarted and finished in what is now contained under the Animote repository.

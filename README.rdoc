@@ -7,3 +7,5 @@ I worked on this for the weekend before we started to gain a better understandin
 My teammates liked what I built and we continued on from this framework until a later github push seemed to become corrupt.
 
 We have since restarted and finished in what is now contained under the Animote repository.
+
+Please refer there for the updated and finished code.
